@@ -162,7 +162,7 @@ figcaption {
 }
 
 .styleguide-block {
-  color: #fff;
+  color: #000;
   text-align: left;
   flex-direction: column;
   align-items: center;
@@ -171,7 +171,7 @@ figcaption {
   display: block;
 }
 
-.heading-jumbo-tiny {
+.heading-caps-tiny {
   text-transform: uppercase;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -348,15 +348,20 @@ figcaption {
   color: #000;
   margin-bottom: 0;
   margin-left: 0;
-  padding-bottom: .1rem;
+  padding-bottom: .4rem;
   font-family: Titillium Web, sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
-  line-height: 122%;
+  line-height: 130%;    
 }
 
 .paragraph-bigger.cc-bigger-light {
   opacity: .6;
+}
+
+.paragraph-large{
+  font-size: 1.3rem;
+  line-height: 150%;
 }
 
 .divider {
@@ -1166,7 +1171,7 @@ figcaption {
   grid-auto-columns: 1fr;
   height: auto;
   margin-top: 0;
-  margin-left: 13.4rem;
+  margin-left: 16.4rem;
   margin-right: 2rem;
   padding-left: 0;
   display: block;
@@ -1326,8 +1331,9 @@ figcaption {
   text-decoration: none;
 }
 
-.div-block-3 {
+.info-block {
   display: block;
+  margin-left: 1.2rem;
 }
 
 .intro-head {
@@ -1387,7 +1393,7 @@ figcaption {
 
 .body-3 {
   background-color: #fff;
-  background-image: url('../images/background-2.png');
+  background-image: url('../images/Frame-32.png');
   background-position: 0 0;
   background-size: 360px;
 }
@@ -1519,7 +1525,7 @@ figcaption {
   border-radius: 0;
   min-width: auto;
   max-width: 37rem;
-  margin-left: 0;
+  margin-left: 2.5rem;
   padding: 0 0 0 3rem;
   position: relative;
 }
@@ -1533,10 +1539,15 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   margin-top: 0;
-  padding: 10px 45px;
+  padding: 0.7rem 3rem;
   text-decoration: none;
   display: flex;
   position: relative;
+}
+
+.dark-bar.large{
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
 .heading-2 {
@@ -2109,20 +2120,20 @@ figcaption {
   justify-content: flex-start;
   place-items: start stretch;
   width: 100%;
-  max-width: 54rem;
+  max-width: 71rem;
   margin: 1.4rem auto 3.9rem 3rem;
   font-weight: 500;
   display: flex;
   position: relative;
 }
 
-.div-block-19 {
+.friedman-text {
   margin-top: .4rem;
   margin-left: 2rem;
 }
 
-.div-block-20, .div-block-21 {
-  margin-left: .5rem;
+.principles-div {
+  margin-left: 2.6rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -2146,7 +2157,7 @@ figcaption {
   }
 
   .paragraph-bigger {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .logo-link.w--current {
@@ -2573,10 +2584,11 @@ figcaption {
     max-width: 32rem;
     padding-left: .9rem;
     padding-right: .9rem;
+    margin-bottom: 2rem;
   }
 
   .dark-bar {
-    padding-left: .8rem;
+    padding-left: 3.6rem;
     padding-right: .8rem;
   }
 
@@ -2782,7 +2794,7 @@ figcaption {
     top: 0;
   }
 
-  .div-block-19 {
+  .friedman-text {
     margin-top: 0;
     margin-left: 1rem;
   }
@@ -3196,7 +3208,7 @@ figcaption {
     margin-right: auto;
   }
 
-  .div-block-19 {
+  .friedman-text {
     margin-top: .2rem;
     margin-left: 0;
   }
@@ -3216,8 +3228,11 @@ figcaption {
   .paragraph-bigger {
     margin-left: 0;
     padding-bottom: .9rem;
-    font-size: .9rem;
     font-weight: 400;
+    
+    font-size: 1.1rem;
+    line-height: 132%;
+    margin-top: 0.4rem;
   }
 
   .navigation {
@@ -3401,6 +3416,7 @@ figcaption {
 
   .dark-bar {
     grid-row-gap: .4rem;
+    padding-left: 1.1rem;
   }
 
   .heading-2 {
@@ -3440,7 +3456,7 @@ figcaption {
   }
 
   .paragraph {
-    font-size: .8rem;
+    font-size: 1rem;
     font-weight: 400;
   }
 
@@ -3505,6 +3521,11 @@ figcaption {
     margin-left: auto;
     margin-right: auto;
   }
+  
+  .disclaimer {
+    margin-left: 0.1rem;
+    
+  }
 
   .heading-big {
     color: #000;
@@ -3568,7 +3589,7 @@ figcaption {
     margin-right: 14px;
   }
 
-  .div-block-19 {
+  .friedman-text {
     margin-left: 0;
     margin-right: auto;
     font-size: 16px;
@@ -3711,6 +3732,21 @@ figcaption {
   }
 }
 
+.dark{
+  color: #000;
+}
+
+.bg-dark{
+  background-color: #000;
+}
+
+.light{
+  color: #fff;
+}
+
+.bg-light{
+  background-color: #000;
+}
 
 @font-face {
   font-family: 'Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght';
