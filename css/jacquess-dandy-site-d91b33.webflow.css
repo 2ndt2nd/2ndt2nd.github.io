@@ -1243,6 +1243,7 @@ figcaption {
 }
 
 .paragraph.condensed {
+  font-size: 1.3rem;
   letter-spacing: -.05rem;
   width: auto;
   max-width: none;
@@ -1493,7 +1494,7 @@ figcaption {
 
 .text-wrapper-tiny {
   grid-column-gap: .1rem;
-  grid-row-gap: .1rem;
+  grid-row-gap: 0.4rem;
   flex-flow: column;
   max-width: 31rem;
   margin-left: 0;
@@ -1550,7 +1551,7 @@ figcaption {
 .image-10 {
   border-top: 2px #000;
   width: 100%;
-  max-width: 62rem;
+  margin-bottom: 1rem;
 }
 
 .content-div-center {
@@ -1629,11 +1630,10 @@ figcaption {
 
 .visual-direction {
   grid-column-gap: 0rem;
-  grid-row-gap: 1.5rem;
   flex-flow: wrap;
   justify-content: center;
   width: auto;
-  max-width: 71rem;
+  max-width: 62rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
