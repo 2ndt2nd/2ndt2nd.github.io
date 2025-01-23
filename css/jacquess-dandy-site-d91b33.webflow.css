@@ -1091,7 +1091,6 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  max-width: 457px;
   height: auto;
   text-decoration: none;
   display: flex;
