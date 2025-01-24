@@ -671,7 +671,7 @@ figcaption {
 }
 
 .body {
-  color: #fff;
+  color: #000000;
   background-color: #fff;
   background-image: url('../images/Frame-32.png');
   background-repeat: repeat;
@@ -1055,6 +1055,7 @@ figcaption {
   text-decoration: none;
   display: flex;
   position: relative;
+  box-sizing: border-box;
 }
 
 .heading-2 {
@@ -2375,6 +2376,39 @@ figcaption {
   margin-left: 3rem;
   display: block;
 }
+
+/* Footer Wrapper */
+.footer-wrap {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer Heading */
+.heading-3 {
+  font-size: 16px;
+  color: #333;
+
+}
+
+
+/* Social Links Container */
+.social-links {
+  position: absolute;
+  right: 1rem; /* Aligns social links 1 rem from the right */
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  column-gap: 1rem; /* Spacing between icons */
+}
+
+/* Social Icon Links */
+.social-link {
+  color: #333;
+  font-size: 20px; /* Adjusts the size of the icons */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+
 
 @media screen and (max-width: 991px) {
   .styleguide-block {
