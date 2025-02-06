@@ -1005,7 +1005,6 @@ body {
 
 .heading-big {
   color: var(--white);
-  background-image: linear-gradient(#000, #000);
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
@@ -1510,6 +1509,11 @@ body {
   flex-flow: column;
   max-width: 58rem;
   display: flex;
+}
+
+.text--wrapper__medium.content-desc {
+  margin-top: 1.1rem;
+  margin-left: 2rem;
 }
 
 .text-flex--row {
@@ -2131,7 +2135,7 @@ body {
   }
 
   .content-div-center.side-margin {
-    margin:0;
+    margin:2rem;
   }
 
   .div-name {
