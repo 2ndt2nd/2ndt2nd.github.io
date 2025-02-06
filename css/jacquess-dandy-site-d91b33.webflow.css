@@ -78,12 +78,14 @@ a {
 }
 
 a:hover {
-  transition-duration: 5ms;
-  color: #8c8e94;
+  transform: color(#7b7b7b);
+  transition: transform 0.5s ease;
 }
 
 a:active {
-  color: #43464d;
+  transform: color(#7b7b7b);
+  transition: transform 0.5s ease;
+  
 }
 
 ul {
