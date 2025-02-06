@@ -1511,7 +1511,7 @@ body {
   display: flex;
 }
 
-.text--wrapper__medium.content-desc {
+.text--wrapper__medium .highlight-text-small {
   margin-top: 1.1rem;
   margin-left: 2rem;
 }
