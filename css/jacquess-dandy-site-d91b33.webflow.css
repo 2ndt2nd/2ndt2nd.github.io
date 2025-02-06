@@ -947,13 +947,13 @@ figcaption {
 
 .cat-poster-wrap {
   display: grid;
-  grid-gap: 0;
+  row-gap: 1rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
   place-items: start;
   min-width: auto;
-  max-width: 70rem;
+  max-width: 40rem;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2rem;
@@ -963,6 +963,10 @@ figcaption {
 
 .cat-container{
   max-width: fit-content;
+}
+
+.cat-container .posters{
+  height: auto;
 }
 
 .image {
@@ -994,7 +998,6 @@ figcaption {
 
 .heading-big {
   color: var(--white);
-  background-image: linear-gradient(#000, #000);
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
@@ -1018,7 +1021,7 @@ figcaption {
   font-size: 4rem;
 }
 
-.heading-big.center {
+.center {
   flex-flow: row;
   flex: 0 auto;
   justify-content: flex-start;
@@ -1030,7 +1033,7 @@ figcaption {
 .name-block {
   grid-gap: .3rem;
   flex-flow: column;
-  max-width: 53rem;
+  max-width: 56rem;
   display: flex;
   position: absolute;
   top: 90%;
@@ -1305,17 +1308,20 @@ figcaption {
   overflow: visible;
 }
 
-.div-block-40 {
+.flex-wrap--content {
   grid-gap: 0;
   flex-flow: wrap;
   width: auto;
-  max-width: 76rem;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
   display: flex;
+}
+
+.flex-wrap--content .narrow {
+  max-width: 76rem;
 }
 
 .flex-block-2 {
@@ -1427,7 +1433,7 @@ figcaption {
   display: flex;
 }
 
-.highlight-text-large {
+.highlight-text__large {
   z-index: auto;
   box-sizing: content-box;
   clear: none;
@@ -1467,7 +1473,7 @@ figcaption {
   display: flex;
 }
 
-.highlight-text-small {
+.highlight-text__small {
   z-index: auto;
   box-sizing: content-box;
   clear: none;
@@ -1484,7 +1490,7 @@ figcaption {
   margin-left: 0;
   padding-right: 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   font-weight: 500;
   line-height: 125%;
   display: block;
@@ -1589,10 +1595,8 @@ figcaption {
   grid-auto-flow: row;
   justify-content: flex-start;
   align-items: flex-end;
-  max-width: 94rem;
+  max-width: 75rem;
   margin: 3rem auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
   display: flex;
   position: static;
 }
@@ -2243,7 +2247,7 @@ figcaption {
   }
 
 
-  .highlight-text-large {
+  .highlight-text__large {
     height: 100%;
     padding-bottom: 4px;
     font-size: 31px;
@@ -2251,7 +2255,7 @@ figcaption {
     top: -8px;
   }
 
-  .highlight-text-small {
+  .highlight-text__small {
     padding-bottom: 0;
     font-size: 1.7rem;
     line-height: 125%;
@@ -2609,7 +2613,7 @@ figcaption {
     padding-right: 0;
   }
 
-  .highlight-text-large, .highlight-text-small {
+  .highlight-text__large, .highlight-text__small {
     font-size: 31px;
     line-height: 42px;
   }
@@ -2887,7 +2891,7 @@ figcaption {
     font-size: .8rem;
   }
 
-  .highlight-text-large, .highlight-text-small {
+  .highlight-text__large, .highlight-text__small {
     box-sizing: border-box;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -2975,7 +2979,6 @@ figcaption {
   grid-area: span 1 / span 2 / span 1 / span 2;
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
 }
 
 
