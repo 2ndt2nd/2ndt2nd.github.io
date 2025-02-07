@@ -1040,7 +1040,7 @@ body {
 .name-block {
   grid-gap: .3rem;
   flex-flow: column;
-  max-width: 53rem;
+  max-width: 56rem; 
   display: flex;
   position: absolute;
   top: 90%;
