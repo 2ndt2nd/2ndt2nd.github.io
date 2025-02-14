@@ -1,3 +1,4 @@
+/* stylelint-disable selector-class-pattern */
 :root {
   --black: black;
   --white: white;
@@ -11,11 +12,18 @@
 
 body {
   color: #1a1b1f;
-  font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 28px;
   margin-left: 12rem;
+  background-color: #fff;
+  background-image: url('../images/Frame-32.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  margin-top: 0;
+  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
+  display: block;
 }
 
 h1 {
@@ -501,19 +509,6 @@ figcaption {
 
 .protected-heading {
   margin-bottom: 30px;
-}
-
-body {
-  color: #000;
-  background-color: #fff;
-  background-image: url('../images/Frame-32.png');
-  background-repeat: repeat;
-  background-size: auto;
-  background-attachment: fixed;
-  margin-top: 0;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-weight: 300;
-  display: block;
 }
 
 .vectors-wrappervert {
@@ -2974,7 +2969,7 @@ body {
   }
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
+
 ._6-wide-div {
   grid-area: span 1 / span 6 / span 1 / span 6;
   display: flex;
@@ -2982,7 +2977,7 @@ body {
   row-gap: 0.5rem;
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
+
 ._3-wide-div {
   grid-area: span 1 / span 3 / span 1 / span 3;
   display: flex;
@@ -2990,7 +2985,7 @@ body {
   row-gap: 0.5rem;
 }
 
-/* stylelint-disable-next-line selector-class-pattern */
+
 ._2-wide-div {
   grid-area: span 1 / span 2 / span 1 / span 2;
   display: flex;
