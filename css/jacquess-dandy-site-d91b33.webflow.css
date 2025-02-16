@@ -945,8 +945,9 @@ figcaption {
   top: 0;
 }
 
+/*
 .cat-poster-wrap {
-  display: grid;
+  display: flex;
   row-gap: 1rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -954,6 +955,20 @@ figcaption {
   place-items: start;
   min-width: auto;
   max-width: 40rem;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  position: relative;
+  top: 0;
+}
+*/
+
+.cat-poster-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  min-width: auto;
+  max-width: 75rem;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2rem;
