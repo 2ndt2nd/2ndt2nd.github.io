@@ -966,22 +966,30 @@ figcaption {
 .cat-poster-wrap {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  row-gap: 5rem;
   min-width: auto;
-  max-width: 75rem;
+  /*max-width: 75rem;*/
+  max-width: max-content;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   position: relative;
   top: 0;
 }
 
 .cat-container{
   max-width: fit-content;
+  max-height: 30rem;
 }
 
 .cat-container .posters{
   height: auto;
+  max-height: 30rem;
+}
+
+.cat-container .posters2{
+  max-height: 30rem;
+  max-width: auto;
 }
 
 .image {
@@ -1523,7 +1531,7 @@ figcaption {
 }
 
 .text--wrapper__medium.content-desc {
-  margin-top: 0.6rem;
+  margin-top: 0rem;
   margin-left: 2rem;
 }
 
@@ -2213,8 +2221,6 @@ figcaption {
 
   .image-10 {
     max-width: 100%;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
   }
 
   .content-div-center {
@@ -2240,8 +2246,6 @@ figcaption {
     grid-gap: 0;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-left: 20px;
-    margin-right: 20px;
     display: flex;
     top: 0;
   }
@@ -2277,9 +2281,6 @@ figcaption {
 
   .highlight-text__small {
     padding-bottom: 0;
-    font-size: 1.7rem;
-    line-height: 125%;
-    top: -8px;
   }
 
   .text--wrapper__medium {
