@@ -17,7 +17,7 @@ body {
   line-height: 28px;
   margin-left: 12rem;
   background-color: #fff;
-  background-image: url('../images/Frame-32.png');
+  background-image: url('images/Frame-32.png');
   background-repeat: repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -640,7 +640,7 @@ figcaption {
 
 .body-3 {
   background-color: #fff;
-  background-image: url('../images/Frame-32.png');
+  background-image: url('images/Frame-32.png');
   background-position: 0 0;
   background-size: 360px;
 }
@@ -804,7 +804,7 @@ figcaption {
   z-index: 50;
   text-transform: none;
   background-color: #0f0f0f;
-  background-image: url('../images/black-noise.png');
+  background-image: url('images/black-noise.png');
   background-position: 0 0;
   background-size: auto;
   justify-content: center;
@@ -989,7 +989,6 @@ figcaption {
 
 .cat-container .posters2{
   max-height: 30rem;
-  max-width: auto;
 }
 
 .image {
@@ -2094,7 +2093,7 @@ figcaption {
 
   .navigation-vertical {
     background-color: #0f0f0f;
-    background-image: url('../images/black-noise.png');
+    background-image: url('images/black-noise.png');
     flex-flow: row;
     justify-content: center;
     align-items: center;
@@ -3005,7 +3004,7 @@ figcaption {
 
 @font-face {
   font-family: 'Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght';
-  src: url('../images/') format('truetype');
+  src: url('images/') format('truetype');
   font-weight: 100 1000;
   font-style: normal;
   font-display: auto;
