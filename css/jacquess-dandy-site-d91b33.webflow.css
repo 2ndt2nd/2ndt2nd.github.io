@@ -967,9 +967,8 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   row-gap: 5rem;
+  width: max-content;
   min-width: auto;
-  /*max-width: 75rem;*/
-  max-width: max-content;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 5rem;
@@ -1148,7 +1147,7 @@ figcaption {
 .text--wrapper__tiny {
   grid-gap: 0.4rem .1rem;
   flex-flow: column;
-  max-width: 31rem;
+  max-width: 34rem;
   margin-left: 0;
   display: flex;
 }
@@ -1530,7 +1529,7 @@ figcaption {
 }
 
 .text--wrapper__medium.content-desc {
-  margin-top: 0rem;
+  margin-top: 0;
   margin-left: 2rem;
 }
 
