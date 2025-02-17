@@ -80,7 +80,7 @@ p {
 
 a {
   color: #1a1b1f;
-  text-decoration: underline;
+  text-decoration: none;
   transition: opacity .2s;
   display: block;
 }
