@@ -1081,6 +1081,7 @@ figcaption {
   text-decoration: none;
   display: flex;
   position: relative;
+  box-sizing: border-box;
 }
 
 .medium-section {
@@ -1354,10 +1355,8 @@ figcaption {
   margin-bottom: 0;
   margin-left: 2.5rem;
   margin-right: auto;
-  padding-bottom: 0;
   display: flex;
   position: static;
-
 }
 
 .div-block-43 {
@@ -1489,16 +1488,13 @@ figcaption {
   clear: none;
   color: #0f0f0f;
   letter-spacing: -1.5px;
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: stretch;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   padding-right: 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 500; 
   line-height: 125%;
   display: block;
   position: relative;
@@ -1516,6 +1512,7 @@ figcaption {
 .text--wrapper__medium.content-desc {
   margin-top: 0;
   margin-left: 2rem;
+  margin-right: 1rem;
 }
 
 .text-flex--row {
