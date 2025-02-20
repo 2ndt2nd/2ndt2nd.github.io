@@ -1346,12 +1346,10 @@ figcaption {
 }
 
 .common-desc {
-  grid-gap: .7rem;
   flex-flow: column;
   justify-content: flex-end;
   align-items: flex-start;
   width: auto;
-  max-width: min-content;
   margin-bottom: 0;
   margin-left: 2.5rem;
   margin-right: auto;
@@ -1504,13 +1502,12 @@ figcaption {
 .text--wrapper__medium {
   grid-gap: .2rem;
   flex-flow: column;
-  min-width: none;
   width: auto;
+  max-width: 61rem;
   display: flex;
 }
 
 .text--wrapper__medium.content-desc {
-  margin-top: 0;
   margin-left: 2rem;
   margin-right: 1rem;
 }
@@ -1822,7 +1819,7 @@ figcaption {
   place-items: start stretch;
   width: auto;
   max-width: 45rem;
-  margin: 3rem auto 4rem 2.5rem;
+  margin: 3rem auto 4rem 1.5rem;
   padding-left: 0;
   padding-right: 2.5rem;
   font-weight: 500;
