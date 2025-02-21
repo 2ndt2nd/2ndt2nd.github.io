@@ -26,6 +26,16 @@ body {
   display: block;
 }
 
+section{
+  margin-bottom: 3rem;
+}
+
+section.spaced{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
 h1 {
   margin-top: 20px;
   margin-bottom: 15px;
@@ -261,12 +271,6 @@ figcaption {
   line-height: 120%;
   position: static;
 }
-
-.section {
-  margin-left: 10rem;
-  margin-right: 30px;
-}
-
 
 .button {
   color: #fff;
@@ -678,11 +682,14 @@ figcaption {
   font-weight: 600;
 }
 
+.intro-summary{
+  margin-top: 3rem;
+}
+
 .content-div-left {
   grid-gap: 2rem 0;
   flex-flow: column;
   max-width: 99.4rem;
-  margin-top: 4rem;
   margin-left: 0;
   margin-right: auto;
   display: flex;
@@ -725,6 +732,10 @@ figcaption {
   display: flex;
   position: relative;
   box-sizing: border-box;
+}
+
+.dark-bar.heading-medium {
+  padding: 0;
 }
 
 .heading-2 {
@@ -872,7 +883,7 @@ figcaption {
 }
 
 .content-wrap {
-  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .paragraph {
@@ -971,9 +982,8 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   row-gap: 5rem;
-  width: max-content;
   min-width: auto;
-  max-width: 100%;
+  max-width: max-content;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 3.3rem;
@@ -1097,7 +1107,6 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   max-width: 99.4rem;
-  margin: 2.4rem auto 5.4rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   position: relative;
@@ -1105,7 +1114,6 @@ figcaption {
 
 .project-summ {
   grid-gap: 4rem;
-  flex-flow: row;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -1113,7 +1121,7 @@ figcaption {
   place-items: start stretch;
   width: auto;
   max-width: 60rem;
-  margin: 0 0 0 5rem;
+  margin: 0 2.5rem;
   padding-right: 0;
   font-weight: 500;
   display: grid;
@@ -1123,14 +1131,11 @@ figcaption {
 .intro-block {
   grid-gap: 1.1rem;
   flex-flow: column;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
   justify-content: flex-start;
   place-items: start stretch;
   width: auto;
   max-width: 63rem;
-  margin: 0 auto 6rem 4.5rem;
+  margin: 0 auto 5rem 2.5rem;
   padding-left: 0;
   padding-right: 2.5rem;
   font-weight: 500;
@@ -1209,12 +1214,13 @@ figcaption {
 
 .content-div-center {
   display: flex;
+  justify-content: center;
   grid-gap: 0;
-  flex-flow: wrap;
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
+}
+
+.content-div-center.wrap {
+  flex-flow:wrap;
 }
 
 .content-div-center.side-margin {
@@ -1244,6 +1250,30 @@ figcaption {
 .bar-section {
   font-style: normal;
 }
+
+
+
+._6-wide-div {
+  grid-area: span 1 / span 6 / span 1 / span 6;
+  display: flex;
+  flex-direction: column;
+}
+
+
+._3-wide-div {
+  grid-area: span 1 / span 3 / span 1 / span 3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+
+._2-wide-div {
+  grid-area: span 1 / span 2 / span 1 / span 2;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .div-block-29 {
   grid-gap: .3rem;
@@ -1380,12 +1410,7 @@ figcaption {
 
 .landing-pages-section {
   grid-gap: 0;
-  object-fit: cover;
   flex-flow: row;
-  grid-template-rows: auto;
-  grid-template-columns: 1.9fr 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: row;
   justify-content: flex-start;
   align-items: stretch;
   width: 100%;
@@ -1407,8 +1432,6 @@ figcaption {
   line-height: 100%;
   display: block;
 }
-
-
 
 .divider-bold {
   color: #0f0f0f;
@@ -1468,7 +1491,6 @@ figcaption {
   grid-gap: .2rem;
   flex-flow: column;
   max-width: 68rem;
-  margin-top: .5rem;
   margin-left: .2rem;
   display: flex;
 }
@@ -1493,7 +1515,8 @@ figcaption {
 }
 
 .text--wrapper__medium.content-desc {
-  margin: 1rem;
+  margin-top: 0.7rem;
+  margin-left: 2.5rem;
 }
 
 .text-flex--row {
@@ -1510,7 +1533,6 @@ figcaption {
 
 .heading-medium {
   color: var(--white);
-  background-image: linear-gradient(#000, #000);
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
@@ -1625,9 +1647,6 @@ figcaption {
   grid-gap: 0;
   flex-flow: wrap;
   flex: 0 auto;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
@@ -1742,11 +1761,11 @@ figcaption {
 
 .content-bloc-narrow {
   flex-flow: wrap;
-  justify-content: left;
-  place-items: flex-start stretch;
+  /*! justify-content: left; */
+  /*! place-items: flex-start stretch; */
   width: auto;
   max-width: 35rem;
-  margin: 1.4rem auto;
+  margin: auto 3rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1990,7 +2009,7 @@ figcaption {
   }
 
   .content-div-left {
-    margin: 2rem auto 0 2.3rem;
+    margin: 2rem auto 2.3rem;
     padding: 0 3rem;
     display: block;
   }
@@ -2117,10 +2136,6 @@ figcaption {
   }
 
   .medium-section {
-    grid-gap: 2.6rem;
-    grid-template-rows: auto auto;
-    grid-template-columns: .4fr;
-    grid-auto-columns: 1fr;
     padding: 0 2rem;
   }
 
@@ -2271,6 +2286,10 @@ figcaption {
   .screen-wrap {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  ._6-wide-div {
+  grid-area: span 1 / span 3 / span 1 / span 3;
   }
 
   .video {
@@ -2933,29 +2952,6 @@ figcaption {
     margin-left: .8rem;
     margin-right: 14px;
   }
-}
-
-
-._6-wide-div {
-  grid-area: span 1 / span 6 / span 1 / span 6;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
-}
-
-
-._3-wide-div {
-  grid-area: span 1 / span 3 / span 1 / span 3;
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5rem;
-}
-
-
-._2-wide-div {
-  grid-area: span 1 / span 2 / span 1 / span 2;
-  display: flex;
-  flex-direction: column;
 }
 
 
