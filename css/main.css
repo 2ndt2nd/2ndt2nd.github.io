@@ -84,8 +84,12 @@ h6 {
   line-height: 28px;
 }
 
-p {
-  margin-bottom: 0;
+
+p{
+  color: #0f0f0f;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.1rem;
+  line-height: 120%;
 }
 
 p.large {
@@ -638,13 +642,10 @@ figcaption {
 .set {
   color: var(--black);
   letter-spacing: -0.05rem;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: "Titillium Web", sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  line-height: 153%;
-  text-decoration: none;
+  line-height: 140%;
 }
 
 .body-3 {
@@ -872,7 +873,7 @@ figcaption {
   place-items: flex-start stretch;
   width: auto;
   max-width: 40rem;
-  margin: 1.4rem auto;
+  margin: 1.4rem auto 0;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -882,25 +883,6 @@ figcaption {
   width: 100%;
 }
 
-.paragraph {
-  color: #0f0f0f;
-  -webkit-text-stroke-color: #fff;
-  flex-flow: column;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.1rem;
-  line-height: 120%;
-  display: flex;
-  position: relative;
-  top: 0;
-  bottom: auto;
-  left: 0;
-}
 
 .paragraph.condensed {
   font-size: 1.3rem;
@@ -1098,7 +1080,7 @@ figcaption {
 
 .medium-section {
   display: flex;
-  grid-gap: 2.6rem;
+  grid-gap: 2rem;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -1215,7 +1197,7 @@ figcaption {
 .content-div-center {
   display: flex;
   justify-content: center;
-  grid-gap: 0;
+  row-gap: 0;
   position: relative;
 }
 
@@ -1761,8 +1743,6 @@ figcaption {
 
 .content-bloc-narrow {
   flex-flow: wrap;
-  /*! justify-content: left; */
-  /*! place-items: flex-start stretch; */
   width: auto;
   max-width: 35rem;
   margin: auto 3rem;
