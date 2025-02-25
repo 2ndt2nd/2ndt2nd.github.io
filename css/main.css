@@ -1467,7 +1467,8 @@ figcaption {
   grid-gap: .2rem;
   flex-flow: column;
   max-width: 68rem;
-  margin-left: .2rem;
+  margin-left: .8rem;
+  margin-top: .2rem;
   display: flex;
 }
 
