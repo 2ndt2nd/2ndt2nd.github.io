@@ -33,7 +33,7 @@ section{
 section.spaced{
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 h1 {
@@ -66,6 +66,7 @@ h4 {
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
+  margin: .2rem 0 .1rem;
 }
 
 
@@ -91,6 +92,7 @@ p{
   font-family: "Titillium Web", sans-serif;
   font-size: 1.1rem;
   line-height: 120%;
+  margin: 0;
 }
 
 p.large {
@@ -738,7 +740,7 @@ figcaption {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 800;
   line-height: 100%;
   text-decoration: none;
@@ -870,6 +872,10 @@ figcaption {
   font-weight: 500;
   display: flex;
   position: relative;
+}
+
+.project-content-bloc.screens {
+  max-width: 30rem;
 }
 
 .content-wrap {
@@ -1078,6 +1084,7 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   max-width: 99.4rem;
+  margin-top: 3rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   position: relative;
@@ -1750,7 +1757,6 @@ figcaption {
 
 .screen-wrap {
   grid-gap: 0;
-  flex-flow: row;
   flex: 0 auto;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -1759,8 +1765,8 @@ figcaption {
   place-items: start stretch;
   min-width: auto;
   max-width: 90rem;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: grid;
   position: relative;
   top: 0;
