@@ -61,12 +61,13 @@ h3 {
 }
 
 h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 38px;
+  color: #0f0f0f;
+  letter-spacing: -1px;
+  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
+
 
 h5 {
   margin-top: 10px;
@@ -675,14 +676,6 @@ figcaption {
 
 }
 
-.heading-4 {
-  color: #0f0f0f;
-  letter-spacing: -1px;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
 .intro-summary{
   margin-top: 3rem;
 }
@@ -1051,7 +1044,7 @@ figcaption {
   grid-gap: .3rem;
   flex-flow: column;
   min-width: 41.7rem;
-  max-width: 56.4rem;
+  max-width: 57.5rem;
   display: flex;
   position: absolute;
   bottom: -40%;
@@ -1199,6 +1192,7 @@ figcaption {
   justify-content: center;
   row-gap: 0;
   position: relative;
+  flex-flow: column;
 }
 
 .content-div-center.wrap {
@@ -1490,7 +1484,7 @@ figcaption {
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.4rem;
   font-weight: 500; 
-  line-height: 125%;
+  line-height: 135%;
   display: block;
   position: relative;
   top: auto;
