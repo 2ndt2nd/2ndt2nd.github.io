@@ -1672,20 +1672,16 @@ figcaption {
 }
 
 .site-showcase {
-  grid-gap: 2rem;
+  display: flex;
+  position: relative;
   flex-flow: wrap;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-flow: row;
   justify-content: flex-start;
   align-items: center;
+  row-gap: 3rem;
   max-width: 99rem;
   margin: auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  display: flex;
-  position: relative;
 }
 
 .challenges-2 {
