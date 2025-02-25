@@ -1190,7 +1190,6 @@ figcaption {
 .content-div-center {
   display: flex;
   justify-content: center;
-  row-gap: 0;
   position: relative;
   flex-flow: column;
 }
@@ -1207,6 +1206,7 @@ figcaption {
 .content-div-center.bottom-align {
   justify-content: center;
   align-items: flex-end;
+  row-gap: 3rem;
 }
 
 .div-block-28 {
@@ -1372,7 +1372,7 @@ figcaption {
 }
 
 .visuals-section {
-  grid-row-gap: 3rem;
+  row-gap: 3rem;
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-end;
