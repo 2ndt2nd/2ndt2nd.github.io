@@ -45,11 +45,17 @@ h1 {
 }
 
 h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 50px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 100%;
+  text-decoration: none;
+  display: block;
+  position: static;
 }
 
 h3 {
@@ -734,20 +740,6 @@ figcaption {
   padding: 0;
 }
 
-.heading-2 {
-  color: #fff;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
-  line-height: 100%;
-  text-decoration: none;
-  display: block;
-  position: static;
-}
-
 .vectors-wrapper-2 {
   object-fit: cover;
   justify-content: center;
@@ -1004,7 +996,7 @@ figcaption {
 }
 
 .heading-big {
-  color: var(--white);
+  color: #0f0f0f;
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
@@ -1021,8 +1013,13 @@ figcaption {
   text-wrap: nowrap;
 }
 
+.dark-bar-small.heading-big{
+  color: white;
+}
+
 .heading-big.friedman {
   padding-left: 1.6rem;
+  color: white;
 }
 
 .heading-big.assets {
@@ -1084,7 +1081,7 @@ figcaption {
   justify-content: flex-start;
   align-items: center;
   max-width: 99.4rem;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   position: relative;
@@ -1626,6 +1623,10 @@ figcaption {
   display: grid;
 }
 
+.multiple-wide.storyboard {
+  max-width: 44rem;
+}
+
 .site-content-bloc {
   grid-gap: 0;
   flex-flow: wrap;
@@ -1840,6 +1841,10 @@ figcaption {
     margin: 0;
   }
 
+  h2 {
+    font-size: 1.5rem;
+  }
+
   #hero-section {
     flex-flow: column;
     flex: 1;
@@ -1998,10 +2003,6 @@ figcaption {
   .dark-bar {
     padding-left: .8rem;
     padding-right: .8rem;
-  }
-
-  .heading-2 {
-    font-size: 1.5rem;
   }
 
   .banner-tags {
@@ -2301,6 +2302,10 @@ figcaption {
 }
 
 @media screen and (width <= 767px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
   .rich-text {
     text-align: left;
     width: 90%;
@@ -2444,10 +2449,6 @@ figcaption {
 
   .dark-bar {
     grid-gap: .2rem 10.7rem;
-  }
-
-  .heading-2 {
-    font-size: 1.2rem;
   }
 
   .vectors-wrapper-2 {
@@ -2647,6 +2648,10 @@ figcaption {
     letter-spacing: -.05rem;
   }
 
+  h2 {
+    font-size: 1.4rem;
+  }
+
   #hero-section {
     flex-flow: column;
     justify-content: space-between;
@@ -2729,10 +2734,6 @@ figcaption {
 
   .dark-bar {
     grid-row-gap: .4rem;
-  }
-
-  .heading-2 {
-    font-size: 1.4rem;
   }
 
   .frame-6 {
