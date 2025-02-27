@@ -692,15 +692,14 @@ figcaption {
   grid-gap: 2rem 0;
   flex-flow: column;
   max-width: 99.4rem;
-  margin-left: 3rem;
-  margin-right: auto;
+  margin: 3rem clamp(0%,5%,6.5rem) 0;
+  /*! margin-right: auto; */
   display: flex;
   position: static;
 }
 
 .content-div-left.intro-summary {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin:0, clamp(0, 2%, 2.5rem);
 }
 
 .disclaimer {
@@ -1088,29 +1087,29 @@ figcaption {
 }
 
 .project-summ {
-  grid-gap: 4rem;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
   justify-content: flex-start;
   place-items: start stretch;
   width: auto;
-  max-width: 60rem;
-  margin: 0 2.5rem;
+  max-width: 80rem;
+  margin: 0 2.5rem 0 0;
   padding-right: 0;
   font-weight: 500;
-  display: grid;
   position: relative;
+}
+
+.project-summ div{
+  max-width: 33.8rem;
 }
 
 .intro-block {
   grid-gap: 1.1rem;
   flex-flow: column;
-  justify-content: flex-start;
-  place-items: start stretch;
+  min-width: 63rem;
   width: auto;
-  max-width: 63rem;
-  margin: 0 auto 5rem 2.5rem;
+  margin: 0 auto 5rem 0;
   padding-left: 0;
   padding-right: 2.5rem;
   font-weight: 500;
@@ -1132,6 +1131,7 @@ figcaption {
   max-width: 47rem;
   margin-left: 0;
   display: flex;
+  width: auto;
 }
 
 .text--wrapper__tiny {
@@ -2135,13 +2135,9 @@ figcaption {
 
   .intro-block {
     grid-gap: 0;
-    justify-content: flex-end;
-    align-items: flex-start;
-    width: auto;
+    width: inherit;
     margin-left: 0;
     margin-right: 0;
-    display: flex;
-    top: 0;
   }
 
 
