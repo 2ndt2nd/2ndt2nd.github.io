@@ -1138,7 +1138,6 @@ figcaption {
 }
 
 ._2-column-desc {
-  grid-gap: .5rem;
   flex-flow: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -1146,7 +1145,7 @@ figcaption {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   display: flex;
   position: static;
 }
@@ -1244,7 +1243,7 @@ figcaption {
   padding-left: 0;
   padding-right: 0;
   display: flex;
-  column-gap: 2rem;
+  gap: 1rem 2rem;
 }
 
 .flex-wrap--content .narrow {
@@ -1456,9 +1455,6 @@ figcaption {
   grid-gap: .3rem;
   flex-flow: column;
   width: 100%;
-  margin-top: 1rem;
-  margin-left: 0;
-  margin-right: 0;
   display: flex;
   position: relative;
   bottom: 0;
