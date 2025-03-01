@@ -580,7 +580,7 @@ figcaption {
   width: auto;
   max-width: 76rem;
   height: auto;
-  margin: 0 auto 5rem;
+  margin: 2rem auto 5rem;
   position: relative;
   top: 50px;
 }
@@ -1089,7 +1089,7 @@ figcaption {
 .project-summ {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 4rem;
+  gap: 2rem 7rem;
   justify-content: flex-start;
   place-items: start stretch;
   width: auto;
@@ -1203,8 +1203,7 @@ figcaption {
 }
 
 .content-div-center.side-margin {
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin: 3rem 2.5rem;
 }
 
 .content-div-center.bottom-align {
@@ -1229,6 +1228,7 @@ figcaption {
 
 .bar-section {
   font-style: normal;
+  margin-bottom: 5rem;
 }
 
 
@@ -1278,7 +1278,7 @@ figcaption {
   display: flex;
 }
 
-.div-block-33 {
+.header-section div {
   grid-gap: 0;
   flex-flow: column;
   justify-content: flex-start;
@@ -1287,8 +1287,6 @@ figcaption {
   height: auto;
   display: flex;
   position: static;
-  top: 16rem;
-  bottom: auto;
 }
 
 .image-12 {
@@ -1297,7 +1295,6 @@ figcaption {
 
 #hero-section {
   flex-flow: column;
-  flex: 1;
   justify-content: space-between;
   align-items: stretch;
   min-height: 80vh;
@@ -1381,7 +1378,7 @@ figcaption {
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 94rem;
-  margin: 3rem auto;
+  margin: 5rem auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   display: flex;
@@ -2159,7 +2156,7 @@ figcaption {
     min-width: 15.5rem;
   }
 
-  .div-block-33 {
+  .header-section div {
     justify-content: center;
     align-items: center;
   }
@@ -2838,7 +2835,7 @@ figcaption {
     max-height: 100%;
   }
 
-  .div-block-33 {
+  .header-section div {
     min-width: auto;
   }
 
