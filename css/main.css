@@ -155,7 +155,7 @@ label {
   text-decoration: none;
 }
 
-label.dark-bar-small{
+label.dark-bar{
   padding: .5rem 1rem;
 }
 
@@ -690,7 +690,6 @@ figcaption {
   flex-flow: column;
   max-width: 99.4rem;
   margin: 3rem clamp(0%,5%,6.5rem) 0;
-  /*! margin-right: auto; */
   display: flex;
   position: static;
 }
@@ -1002,8 +1001,12 @@ figcaption {
   text-wrap: nowrap;
 }
 
-.dark-bar-small.heading-big{
+.dark-bar.heading-big{
   color: white;
+}
+
+.dark-bar h2{
+  color: #fff;
 }
 
 .heading-big.friedman {
@@ -1045,26 +1048,6 @@ figcaption {
 
 .name-block .text--wrapper__medium{
   margin: .6rem 2rem;
-}
-
-.dark-bar-small {
-  grid-gap: .4rem 11rem;
-  background-color: #0f0f0f;
-  flex-flow: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: .5rem 2rem;
-  text-decoration: none;
-  display: flex;
-  position: relative;
-  box-sizing: border-box;
-}
-
-.dark-bar-small h2{
-  color: #ffffff;
 }
 
 .medium-section {
@@ -1136,22 +1119,8 @@ figcaption {
   display: flex;
 }
 
-.div-block-22 {
-  flex-flow: column;
-  display: flex;
-}
-
 .paragraph-2 {
   color: var(--black);
-}
-
-.text-block {
-  color: #0f0f0f;
-  flex: 0 auto;
-  font-size: 17px;
-  line-height: 100%;
-  display: block;
-  position: static;
 }
 
 .block-images {
@@ -1494,12 +1463,6 @@ figcaption {
 .text--wrapper__medium.content-desc {
   margin-top: 0.7rem;
   margin-left: 2.5rem;
-}
-
-.text-flex--row {
-  display: flex;
-  column-gap: 2rem;
-  flex-flow: row;
 }
 
 .small-indent {
@@ -1946,7 +1909,7 @@ figcaption {
     position: relative;
   }
 
-  label.dark-bar-small{
+  label.dark-bar{
     font-size: .8rem;
   }
 
@@ -2102,11 +2065,6 @@ figcaption {
     bottom: -55%;
   }
 
-  .dark-bar-small {
-    padding-left: .8rem;
-    padding-right: .8rem;
-  }
-
   .medium-section {
     padding: 0 2rem;
   }
@@ -2133,11 +2091,6 @@ figcaption {
     width: inherit;
     margin-left: 0;
     margin-right: 0;
-  }
-
-
-  .image-10 {
-    max-width: 100%;
   }
 
   .content-div-center {
@@ -2519,10 +2472,6 @@ figcaption {
     max-width: 33rem;
   }
 
-  .dark-bar-small {
-    grid-gap: .2rem 10.7rem;
-  }
-
   .medium-section {
     margin-left: auto;
     margin-right: auto;
@@ -2798,10 +2747,6 @@ figcaption {
     position: static;
     top: -6%;
     left: 0%;
-  }
-
-  .dark-bar-small {
-    grid-row-gap: .4rem;
   }
 
   .medium-section {
