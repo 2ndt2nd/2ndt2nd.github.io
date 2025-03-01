@@ -971,12 +971,6 @@ figcaption {
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
 }
 
-.div-block-15 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 .div-name {
   max-width: 80%;
   margin: 5.7rem auto 18rem;
@@ -1119,10 +1113,6 @@ figcaption {
   display: flex;
 }
 
-.paragraph-2 {
-  color: var(--black);
-}
-
 .block-images {
   max-width: 50%;
 }
@@ -1175,7 +1165,7 @@ figcaption {
   row-gap: 3rem;
 }
 
-.div-block-28 {
+._2-column-desc {
   grid-gap: .5rem;
   flex-flow: column;
   justify-content: flex-end;
@@ -1215,20 +1205,6 @@ figcaption {
   grid-area: span 1 / span 2 / span 1 / span 2;
   display: flex;
   flex-direction: column;
-}
-
-
-.div-block-29 {
-  grid-gap: .3rem;
-  flex-flow: column;
-  width: 100%;
-  margin-top: 1rem;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  position: relative;
-  bottom: 0;
-  right: 0;
 }
 
 .visual-direction {
@@ -1323,10 +1299,6 @@ figcaption {
 .common-desc.center {
   margin-left: auto;
 
-}
-
-.div-block-43 {
-  padding-left: 0;
 }
 
 .welcome-1 {
@@ -1701,7 +1673,7 @@ figcaption {
   flex-flow: wrap;
   width: auto;
   max-width: 35rem;
-  margin: auto 3rem;
+  margin: 2rem 3rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -2097,7 +2069,7 @@ figcaption {
     margin: 0 2rem;
   }
 
-  .div-block-28 {
+  ._2-column-desc {
     grid-gap: 0;
     flex-flow: column;
     padding-bottom: 2rem;
