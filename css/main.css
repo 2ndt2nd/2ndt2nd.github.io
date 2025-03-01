@@ -45,7 +45,7 @@ h1 {
 }
 
 h2 {
-  color: #fff;
+  color: #1a1b1f;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
@@ -109,6 +109,12 @@ p.large {
   font-size: 1.35rem;
   font-weight: 400;
   line-height: 130%;
+}
+
+p.condensed {
+  font-size: 1.3rem;
+  letter-spacing: -.06rem;
+  width: auto;
 }
 
 a {
@@ -864,13 +870,6 @@ figcaption {
   width: 100%;
 }
 
-
-.paragraph.condensed {
-  font-size: 1.3rem;
-  letter-spacing: -.05rem;
-  width: auto;
-}
-
 .cover-wrap {
   flex-flow: column;
   flex: 0 auto;
@@ -911,7 +910,7 @@ figcaption {
   grid-auto-columns: 1fr;
   place-items: start;
   min-width: auto;
-  max-width: none;
+  max-width: 70rem;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2rem;
@@ -1062,6 +1061,10 @@ figcaption {
   display: flex;
   position: relative;
   box-sizing: border-box;
+}
+
+.dark-bar-small h2{
+  color: #ffffff;
 }
 
 .medium-section {
@@ -1348,6 +1351,11 @@ figcaption {
   position: static;
 }
 
+.common-desc.center {
+  margin-left: auto;
+
+}
+
 .div-block-43 {
   padding-left: 0;
 }
@@ -1369,7 +1377,7 @@ figcaption {
   justify-content: flex-start;
   align-items: flex-end;
   max-width: 94rem;
-  margin: 5rem auto;
+  margin: 2rem auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   display: flex;
@@ -1722,7 +1730,6 @@ figcaption {
   place-items: start stretch;
   min-width: auto;
   max-width: 52rem;
-  margin-top: 3rem;
   display: grid;
   position: relative;
 }
