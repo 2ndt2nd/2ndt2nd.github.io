@@ -264,10 +264,9 @@ ol {
 .w-video iframe,
 .w-video object,
 .w-video embed {
-  top: 0;
-  left: 0;
   width: 100%;
   border: none;
+  height: 20rem;
 }
 
 fieldset {
@@ -1793,7 +1792,7 @@ textarea.w-select {
 
 @media screen and (width <= 479px) {
   .w-nav[data-collapse='tiny'] .w-nav-menu {
-    display: none;
+    display: flex;
   }
 
   .w-nav[data-collapse='tiny'] .w-nav-button {
