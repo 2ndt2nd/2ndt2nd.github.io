@@ -1159,7 +1159,7 @@ figcaption {
 
 #hero-section {
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   min-height: 80vh;
   margin: 0 auto;
