@@ -33,15 +33,20 @@ section{
 .spaced{
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 1.5rem;
 }
 
 h1 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 62px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  padding-bottom: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 100%;
+  display: flex;
 }
 
 h2 {
@@ -134,14 +139,13 @@ a:hover, a:active{
 }
 
 ul {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 40px;
   list-style-type: disc;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-left: 0;
+  margin: .2rem 0;
+  list-style: none;
 }
 
 img {
@@ -653,18 +657,6 @@ figcaption {
   background-size: 360px;
 }
 
-.heading {
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-top: 0;
-  margin-bottom: .5rem;
-  padding-bottom: 0;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2.3rem;
-  font-weight: 600;
-  line-height: 100%;
-  display: flex;
-}
 
 .intro-summary{
   margin-top: 3rem;
@@ -673,7 +665,7 @@ figcaption {
 .content-div-left {
   flex-flow: column;
   max-width: 99.4rem;
-  margin: 3rem clamp(0%,5%,6.5rem) 2rem;
+  margin: 1rem clamp(0%,5%,6.5rem) 2rem;
   display: flex;
   position: static;
 }
@@ -713,6 +705,10 @@ figcaption {
   display: flex;
   position: relative;
   box-sizing: border-box;
+}
+
+.dark-bar.fit{
+  width: fit-content;
 }
 
 .dark-bar.heading-medium {
@@ -981,7 +977,7 @@ figcaption {
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
-  max-width: 99.4rem;
+  max-width: 109.4rem;
   margin: 1rem auto 0;
   padding: 0 4.5rem;
   position: relative;
