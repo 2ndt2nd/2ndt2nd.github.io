@@ -30,7 +30,7 @@ section{
   margin-bottom: 3rem;
 }
 
-section.spaced{
+.spaced{
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
