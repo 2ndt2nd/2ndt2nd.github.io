@@ -2107,12 +2107,17 @@ figcaption {
   p {
   font-size: 0.9rem;
   line-height: 120%;
-}
+  }
+  
+  p.condensed {
+  font-size: 1.1rem;
+  letter-spacing: -0.04rem;
+  }
 
-p.large {
+  p.large {
   font-size: 1rem;
   letter-spacing: 1%;
-}
+  }
   
   h2 {
     font-size: 1.2rem;
@@ -2367,7 +2372,8 @@ p.large {
   }
   
   .heading-big.assets {
-    font-size: 3rem;
+    font-size: 2.7rem;
+    padding: .5rem 1rem;
   }
 
   .name-block {
