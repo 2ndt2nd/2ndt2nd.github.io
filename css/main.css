@@ -30,18 +30,23 @@ section{
   margin-bottom: 3rem;
 }
 
-section.spaced{
+.spaced{
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 1.5rem;
 }
 
 h1 {
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-size: 44px;
-  font-weight: 400;
-  line-height: 62px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 0;
+  margin-bottom: .5rem;
+  padding-bottom: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 100%;
+  display: flex;
 }
 
 h2 {
@@ -91,12 +96,16 @@ h6 {
 }
 
 
-p{
+p {
   color: #0f0f0f;
   font-family: "Titillium Web", sans-serif;
   font-size: 1.1rem;
-  line-height: 120%;
+  line-height: 135%;
   margin: 0;
+}
+
+p.medium {
+  font-size: 1.1rem;
 }
 
 p.large {
@@ -108,7 +117,7 @@ p.large {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.35rem;
   font-weight: 400;
-  line-height: 130%;
+  line-height: 135%;
 }
 
 p.condensed {
@@ -130,14 +139,13 @@ a:hover, a:active{
 }
 
 ul {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 40px;
   list-style-type: disc;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-left: 0;
+  margin: .2rem 0;
+  list-style: none;
 }
 
 img {
@@ -372,7 +380,7 @@ figcaption {
   padding: 9px 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 20px;
 }
 
@@ -544,25 +552,6 @@ figcaption {
   display: flex;
 }
 
-.div-block {
-  grid-gap: 0;
-  border: .8rem solid var(--black);
-  color: #0f0f0f;
-  background-color: #0000;
-  flex-flow: column;
-  flex: 0 auto;
-  order: 0;
-  justify-content: center;
-  align-self: auto;
-  align-items: center;
-  width: 27rem;
-  height: 15rem;
-  padding: 6.1rem 0;
-  line-height: 59.8;
-  display: flex;
-  position: relative;
-}
-
 .content-section {
   clear: none;
   flex-flow: wrap;
@@ -668,28 +657,15 @@ figcaption {
   background-size: 360px;
 }
 
-.heading {
-  justify-content: flex-start;
-  align-items: flex-end;
-  margin-top: 0;
-  margin-bottom: .5rem;
-  padding-bottom: 0;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 2.3rem;
-  font-weight: 600;
-  line-height: 100%;
-  display: flex;
-}
 
 .intro-summary{
   margin-top: 3rem;
 }
 
 .content-div-left {
-  grid-gap: 2rem 0;
   flex-flow: column;
   max-width: 99.4rem;
-  margin: 3rem clamp(0%,5%,6.5rem) 0;
+  margin: 1rem clamp(0%,5%,6.5rem) 2rem;
   display: flex;
   position: static;
 }
@@ -724,28 +700,20 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   margin-top: 0;
-  padding: 10px 2.5rem;
+  padding: .7rem 2.5rem;
   text-decoration: none;
   display: flex;
   position: relative;
   box-sizing: border-box;
 }
 
-.dark-bar.heading-medium {
-  padding: 0;
+.dark-bar.fit{
+  width: fit-content;
 }
 
-.vectors-wrapper-2 {
-  object-fit: cover;
-  justify-content: center;
-  align-items: center;
-  width: 130.305px;
-  height: 36.9857px;
-  margin-top: 10px;
-  text-decoration: none;
-  display: block;
-  position: absolute;
-  inset: 0% 2rem 0% auto;
+.dark-bar.heading-medium {
+  padding: 0;
+  color: #fff;
 }
 
 .frame-6 {
@@ -862,7 +830,7 @@ figcaption {
 }
 
 .project-content-bloc.screens {
-  max-width: 30rem;
+  max-width: 35rem;
 }
 
 .content-wrap {
@@ -900,41 +868,6 @@ figcaption {
   position: relative;
 }
 
-
-.poster-wrap {
-  display: grid;
-  grid-gap: 0;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  place-items: start;
-  min-width: auto;
-  max-width: 70rem;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 2rem;
-  position: relative;
-  top: 0;
-}
-
-/*
-.cat-poster-wrap {
-  display: flex;
-  row-gap: 1rem;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  place-items: start;
-  min-width: auto;
-  max-width: 40rem;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 2rem;
-  position: relative;
-  top: 0;
-}
-*/
-
 .cat-poster-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -943,7 +876,7 @@ figcaption {
   max-width: max-content;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 3.3rem;
+  margin-bottom: 5.3rem;
   position: relative;
   top: 0;
 }
@@ -982,15 +915,10 @@ figcaption {
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: .2rem;
-  padding-left: 1rem;
-  padding-right: 3rem;
   font-family: "Titillium Web", sans-serif;
   font-size: 5rem;
   font-weight: 700;
-  line-height: 130%;
+  line-height: 100%;
   display: flex;
   text-wrap: nowrap;
 }
@@ -1022,7 +950,7 @@ figcaption {
 }
 
 .text--wrapper__medium {
-  grid-gap: .2rem;
+  row-gap: 0.3rem;
   flex-flow: column;
   width: auto;
   max-width: 61rem;
@@ -1046,14 +974,13 @@ figcaption {
 
 .medium-section {
   display: flex;
-  grid-gap: 2rem;
+  gap: 2rem;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
-  max-width: 99.4rem;
-  margin: 3rem auto 0;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  max-width: 109.4rem;
+  margin: 1rem auto 0;
+  padding: 0 4.5rem;
   position: relative;
 }
 
@@ -1151,7 +1078,7 @@ figcaption {
   flex-flow: column;
 }
 
-.content-div-center.wrap {
+.wrap {
   flex-flow:wrap;
 }
 
@@ -1162,11 +1089,9 @@ figcaption {
 .content-div-center.bottom-align {
   justify-content: center;
   align-items: flex-end;
-  row-gap: 3rem;
 }
 
 ._2-column-desc {
-  grid-gap: .5rem;
   flex-flow: column;
   justify-content: flex-end;
   align-items: flex-start;
@@ -1174,7 +1099,7 @@ figcaption {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   display: flex;
   position: static;
 }
@@ -1234,7 +1159,7 @@ figcaption {
 
 #hero-section {
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   min-height: 80vh;
   margin: 0 auto;
@@ -1272,7 +1197,7 @@ figcaption {
   padding-left: 0;
   padding-right: 0;
   display: flex;
-  column-gap: 2rem;
+  gap: 1rem 2rem;
 }
 
 .flex-wrap--content .narrow {
@@ -1400,7 +1325,7 @@ figcaption {
   left: 0;
 }
 
-.image-100-wide {
+._100-wide {
   width: 100%;
 }
 
@@ -1419,10 +1344,6 @@ figcaption {
   clear: none;
   color: #0f0f0f;
   letter-spacing: -1.5px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding-right: 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.4rem;
   font-weight: 500; 
@@ -1484,29 +1405,10 @@ figcaption {
   grid-gap: .3rem;
   flex-flow: column;
   width: 100%;
-  margin-top: 1rem;
-  margin-left: 0;
-  margin-right: 0;
   display: flex;
   position: relative;
   bottom: 0;
   right: 0;
-}
-
-.paragraph-medium {
-  opacity: 1;
-  color: #0f0f0f;
-  margin-left: 0;
-  margin-right: auto;
-  padding: 0;
-  font-family: "Titillium Web", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 135%;
-}
-
-.paragraph-medium.cc-bigger-light {
-  opacity: .6;
 }
 
   .demo-section {
@@ -1534,6 +1436,15 @@ figcaption {
   font-weight: 500;
   display: flex;
   position: relative;
+}
+
+.project-challenge-bloc .dark-bar {
+  padding: 1rem 1.5rem;
+}
+
+.project-challenge-bloc .content-desc {
+  margin-top: .4rem;
+  margin-left: 1.5rem;
 }
 
 .responsive-image {
@@ -1591,16 +1502,12 @@ figcaption {
   align-items: center;
   width: 100%;
   max-width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin: 2rem auto 0;
   display: flex;
 }
 
 .closing-section {
   grid-gap: .4rem;
-  flex-flow: wrap;
-  flex-direction:column;
-  grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
   justify-content: space-between;
@@ -1639,14 +1546,8 @@ figcaption {
   display: flex;
 }
 
-.div-block-47 {
-  margin-left: .5rem;
-  margin-right: .5rem;
-}
-
 .cover-wrap-marginless {
   flex-flow: column;
-  flex: 0 auto;
   justify-content: flex-start;
   align-items: center;
   margin: 0 0 auto;
@@ -1655,18 +1556,19 @@ figcaption {
   top: 0;
 }
 
-.poster-wrap-small {
-  grid-gap: 0;
-  flex: 0 auto;
+.cover-wrap-marginless img{
+  width: 100%;
+}
+
+.poster-wrap {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
-  justify-content: flex-start;
-  place-items: start stretch;
   min-width: auto;
-  max-width: 52rem;
+  max-width: 70rem;
   display: grid;
   position: relative;
+  margin-bottom:2rem;
 }
 
 .content-bloc-narrow {
@@ -1705,11 +1607,10 @@ figcaption {
 
 .video {
   min-width: 18.6rem;
-  min-height: 28rem;
 }
 
 .flex-right {
-  grid-gap: 3rem;
+  grid-gap: clamp(1rem,3%,2.5rem);
   justify-content: flex-start;
   align-items: flex-end;
   display: flex;
@@ -1721,7 +1622,8 @@ figcaption {
   place-items: start stretch;
   width: auto;
   max-width: 45rem;
-  margin: 3rem auto 4rem 1.5rem;
+  margin: 3rem auto 4rem 0;
+  row-gap: .5rem;
   padding-left: 0;
   padding-right: 2.5rem;
   font-weight: 500;
@@ -1730,7 +1632,7 @@ figcaption {
 }
 
 .whiskr-container {
-  margin-left: 5rem;
+  /*! margin-left: 5rem; */
   display: block;
 }
 
@@ -1807,7 +1709,7 @@ figcaption {
   }
 
   .menu-icon {
-    display: block;
+    display: none;
   }
 
   .navigation-item {
@@ -1857,9 +1759,6 @@ figcaption {
     background-clip: border-box;
     flex-flow: row;
     flex: 0 auto;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 1fr;
     margin-right: 0;
     display: flex;
     position: static;
@@ -1869,15 +1768,6 @@ figcaption {
   .vectors-wrappervert {
     width: 48px;
     height: auto;
-    position: relative;
-  }
-
-  .div-block {
-    flex: 1;
-    width: auto;
-    max-width: 21.3rem;
-    min-height: 260px;
-    padding-bottom: 0;
     position: relative;
   }
 
@@ -1922,7 +1812,7 @@ figcaption {
   .content-div-left {
     margin: 2rem auto 2.3rem;
     padding: 0 3rem;
-    display: block;
+    /*! display: block; */
   }
 
   .disclaimer {
@@ -1931,8 +1821,7 @@ figcaption {
   }
 
   .dark-bar {
-    padding-left: .8rem;
-    padding-right: .8rem;
+    padding:.8rem 2.5rem;
   }
 
   .banner-tags {
@@ -2026,11 +1915,6 @@ figcaption {
     display: flex;
   }
 
-  .heading-big {
-    color: #fff;
-    padding-left: .9rem;
-  }
-
   .name-block {
     min-width: 41.7rem;
     max-width: 41.8rem;
@@ -2075,13 +1959,9 @@ figcaption {
     padding-bottom: 2rem;
   }
 
-  .div-block-29 {
-    min-width: 15.5rem;
-  }
-
   .header-section div {
     justify-content: center;
-    align-items: center;
+    min-width: auto;
   }
 
   .assets-content {
@@ -2124,6 +2004,10 @@ figcaption {
   .text--wrapper__medium {
     margin-left: 1rem;
   }
+  
+  .text--wrapper__medium.content-desc {
+  max-width: 100%;
+  }
 
   .heading-medium {
     color: #fff;
@@ -2132,10 +2016,6 @@ figcaption {
 
   .header-block-medium {
     min-width: 15.5rem;
-  }
-
-  .paragraph-medium {
-    font-size: 1.1rem;
   }
 
   .demo-section {
@@ -2186,17 +2066,15 @@ figcaption {
   }
 
   .video {
-    min-width: 20rem;
-    min-height: 43.7rem;
+    min-width: 43rem;
   }
 
   .flex-right {
     grid-gap: 0;
-    order: 0;
-    justify-content: flex-start;
+    /*! order: 0; */
+    justify-content: center;
     align-items: flex-end;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    flex-wrap: wrap;
   }
 
   .intro-block-small {
@@ -2212,12 +2090,18 @@ figcaption {
   }
 
   .whiskr-container {
-    order: 1;
-    margin-left: 0;
+    /*! order: 1; */
+    margin: 0 2.5rem;
+    width: 100%;
   }
 }
 
-@media screen and (width <= 767px) {
+@media screen and (width <= 780px) {
+  p {
+  font-size: 0.9rem;
+  line-height: 120%;
+}
+  
   h2 {
     font-size: 1.2rem;
   }
@@ -2230,6 +2114,12 @@ figcaption {
 
   .container {
     text-align: center;
+  }
+
+  .cat-poster-wrap {
+    margin-bottom: 0.5rem;
+    flex-wrap: nowrap;
+    flex-flow: column;
   }
 
   .heading-jumbo {
@@ -2255,9 +2145,11 @@ figcaption {
 
   .navigation-item {
     flex: 0 auto;
-    padding: 10px;
-    font-weight: 100;
+    padding: 0.6rem 0.9rem 0;
+    font-weight: 710;
     display: block;
+    letter-spacing: -8.4%;
+    font-size: 0.9rem;
   }
 
   .multiple-wide {
@@ -2268,6 +2160,11 @@ figcaption {
   .navigation {
     padding: 20px 30px;
   }
+  
+  .introduction {
+  margin-top: 0;
+  margin-bottom: 0;
+  }
 
   .menu-button {
     flex: 0 auto;
@@ -2276,6 +2173,7 @@ figcaption {
   .navigation-wrapvert {
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
   }
 
   .footer-wrap {
@@ -2292,12 +2190,7 @@ figcaption {
   }
 
   .vectors-wrappervert {
-    width: 34px;
-  }
-
-  .div-block {
-    height: 15rem;
-    min-height: auto;
+    width: 3rem;
   }
 
   .content-section {
@@ -2307,11 +2200,6 @@ figcaption {
 
   .content-section.slide-in {
     height: auto;
-  }
-
-  .text-flex--row {
-    row-gap: 1rem;
-    flex-flow: column;
   }
 
   .highlight-text {
@@ -2333,6 +2221,7 @@ figcaption {
   .frame-22 {
     padding-left: 0;
     padding-right: 0;
+    margin-top: 5rem;
   }
 
   .set {
@@ -2351,11 +2240,8 @@ figcaption {
   }
 
   .content-div-left {
-    margin-bottom: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 2rem 0.5rem 0;
+    padding: 0;
   }
 
   .disclaimer {
@@ -2365,12 +2251,6 @@ figcaption {
 
   .dark-bar {
     grid-gap: .2rem 10.7rem;
-  }
-
-  .vectors-wrapper-2 {
-    width: 5rem;
-    margin-top: .6rem;
-    position: absolute;
   }
 
   .frame-6 {
@@ -2397,10 +2277,11 @@ figcaption {
   }
 
   .nav-wrap-vert {
-    margin: 0 auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 0;
+    margin: 0.7rem auto;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    row-gap: 0.1rem;
   }
 
   .project-content-bloc {
@@ -2428,8 +2309,7 @@ figcaption {
   }
 
   .heading-big {
-    padding-left: .2rem;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 
   .heading-big.friedman {
@@ -2459,7 +2339,7 @@ figcaption {
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 0 0 3rem;
+    margin: 0 1rem 3rem;
   }
 
   .intro-block {
@@ -2476,7 +2356,7 @@ figcaption {
   }
 
   .content-div-center {
-    margin-top: 1rem;
+    margin: 0 1.5rem;
   }
 
   .content-div-center.side-margin {
@@ -2503,13 +2383,6 @@ figcaption {
     text-wrap: wrap;
   }
 
-  .paragraph-medium {
-    margin-left: 1rem;
-    font-size: .9rem;
-    font-weight: 400;
-    line-height: 120%;
-  }
-
   .demo-section {
     margin-bottom: 0;
     margin-left: 2rem;
@@ -2531,8 +2404,8 @@ figcaption {
   }
 
   .video {
-    min-width: 24rem;
-    min-height: 52.4rem;
+    min-width: auto;
+    width: 100%;
   }
 
   .flex-right {
@@ -2540,6 +2413,7 @@ figcaption {
     flex-flow: column;
     justify-content: flex-start;
     align-items: center;
+    margin: auto 1rem;
   }
 
   .intro-block-small {
@@ -2547,6 +2421,7 @@ figcaption {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
 
   .whiskr-container {
@@ -2559,9 +2434,23 @@ figcaption {
     font-size: 1rem;
     letter-spacing: -.05rem;
   }
+  
+  h1 {
+  margin-bottom: 0.2rem;
+}
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  
+  label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 10%;
+  }
+  
+  section{
+  margin-bottom: 1rem;
   }
 
   #hero-section {
@@ -2583,8 +2472,9 @@ figcaption {
   }
 
   .heading-jumbo {
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 1.5rem;
+    line-height: 100%;
+    letter-spacing: -3.9%;
   }
 
   .paragraph-bigger {
@@ -2597,14 +2487,6 @@ figcaption {
   .navigation {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-
-  .div-block {
-    width: auto;
-    min-width: 12rem;
-    max-width: 29rem;
-    height: 18rem;
   }
 
   .content-section.slide-in {
@@ -2620,11 +2502,18 @@ figcaption {
     line-height: 100%;
     position: static;
   }
+  
+    
+  .welcome-1 .highlight-text, .welcome-2 .highlight-text{
+    font-size: 1.4rem;
+    text-align: center;
+  }
 
   .set {
     max-width: 29rem;
-    font-size: .7rem;
+    font-size: 0.8rem;
     font-weight: 400;
+    letter-spacing: 0;
   }
 
   .heading {
@@ -2633,19 +2522,38 @@ figcaption {
   }
 
   .content-div-left {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin:1rem;
     padding-left: 0;
     padding-right: 0;
   }
   
   .content-div-left.intro-summary {
   margin:1rem 1.1rem;
-}
+  }
+
+  .content-desc {
+    margin: .2rem 0;
+  }
+
+  .cat-poster-wrap {
+    min-width: fit-content;
+  }
+
+  .cat-container {
+    min-width: auto;
+    margin: auto;
+    max-width: none;
+  }
+
+  .cat-container .posters{
+    height: auto;
+    width: max-content;
+    max-height: none;
+  }
 
   .dark-bar {
     grid-row-gap: .4rem;
+    padding: 0.7rem 1rem;
   }
 
   .frame-6 {
@@ -2723,8 +2631,8 @@ figcaption {
 
   .medium-section {
     margin: 2rem auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 1.5rem;
+    /*! padding-right: 0; */
   }
 
   .image-2 {
@@ -2732,18 +2640,15 @@ figcaption {
   }
 
   .project-summ {
-    grid-gap: 1rem;
+    grid-gap: 0.7rem;
     flex-flow: column;
+    margin-bottom: 1rem;
   }
 
   .intro-block {
     grid-gap: 0;
     margin: auto 1.1rem 3rem;
     padding: 0;
-  }
-
-  .text-block {
-    text-align: center;
   }
 
   .block-images {
@@ -2776,14 +2681,22 @@ figcaption {
     box-sizing: border-box;
     margin-bottom: 0;
     padding-bottom: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     position: static;
     letter-spacing: -4.1%;
   }
 
-  .text--wrapper__medium {
-    margin-left: 1rem;
+  .text--wrapper__wide {
+    margin: 0 .2rem;
   }
+
+  .text--wrapper__medium {
+    margin-left: 0;
+  }
+
+  .text--wrapper__medium.content-desc {
+    margin: .5rem 0.7rem;
+    }
   
   .name-block .text--wrapper__medium {
     margin: 0 0.7rem;
@@ -2792,19 +2705,14 @@ figcaption {
   .heading-medium {
     color: #0f0f0f;
     background-image: linear-gradient(#0000, #0000);
-    margin-bottom: .2rem;
-    margin-left: 0;
-    margin-right: .2rem;
-    padding-bottom: .2rem;
     padding-left: 0;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
+    letter-spacing: -3.3%;
   }
-
-  .paragraph-medium {
-    margin-left: 0;
-    padding-bottom: .9rem;
-    font-size: .9rem;
-    font-weight: 400;
+  
+  .navigation-item {
+    padding: 0.6rem 0.7rem 0;
+    font-size: 0.7rem;
   }
 
   .demo-section {
@@ -2817,8 +2725,7 @@ figcaption {
 
   .project-challenge-bloc, .site-content-bloc, .site-content-bloc-wide {
     grid-gap: 0;
-    margin-left: .8rem;
-    margin-right: 14px;
+    margin: 0 .8rem;
   }
 
   .site-showcase {
@@ -2832,14 +2739,11 @@ figcaption {
   .video {
     box-sizing: border-box;
     aspect-ratio: auto;
-    min-width: 90vw;
-    min-height: 28rem;
   }
 
   .intro-block-small {
-    grid-gap: 0;
-    margin-left: .8rem;
-    margin-right: 14px;
+    gap: 0;
+    margin: 0 0 3rem;
   }
 }
 
