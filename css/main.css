@@ -1982,9 +1982,10 @@ figcaption {
   }
 
   .visuals-section, .landing-pages-section {
-    max-width: none;
     padding: 0;
     display: block;
+    max-width: 80%;
+    margin-top: 2rem;
   }
 
   .disc-desc {
@@ -2120,6 +2121,8 @@ p.large {
   .assets-content {
     flex-flow: column;
     row-gap: 1rem;
+    overflow: scroll;
+    max-height: 30rem;
   }
 
   .rich-text {
@@ -2415,8 +2418,8 @@ p.large {
 
   .visuals-section, .landing-pages-section {
     margin-bottom: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /*! margin-left: 2rem; */
+    margin: 2rem auto;
     padding-left: 0;
     padding-right: 0;
   }
@@ -2587,7 +2590,7 @@ p.large {
   }
 
   .content-desc {
-    margin: .2rem 0;
+    margin: .2rem 0.5rem;
   }
 
   .cat-poster-wrap {
@@ -2604,6 +2607,10 @@ p.large {
     height: auto;
     width: max-content;
     max-height: none;
+  }
+
+  .content-bloc-narrow {
+    margin: 2rem 0;
   }
 
   .dark-bar {
@@ -2637,8 +2644,8 @@ p.large {
 
   .project-content-bloc {
     grid-gap: 0;
-    /*! max-width: 21.6rem; */
-    /*! margin: 0; */
+    /*! max-width: 22.6rem; */
+    margin: 0 .5rem;
   }
 
   .paragraph {
@@ -2719,7 +2726,7 @@ p.large {
   }
 
   .assets-content {
-    grid-gap: 0;
+    row-gap: 1rem;
     margin-left: .8rem;
     margin-right: 14px;
   }
