@@ -2637,7 +2637,8 @@ p.large {
 
   .project-content-bloc {
     grid-gap: 0;
-    max-width: 21.6rem;
+    /*! max-width: 21.6rem; */
+    /*! margin: 0; */
   }
 
   .paragraph {
