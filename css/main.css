@@ -2396,8 +2396,8 @@ p.large {
   }
 
   .intro-block {
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0;
+    margin: 0 .5rem 3rem;
   }
 
   .block-images {
@@ -2417,15 +2417,15 @@ p.large {
   }
 
   .visuals-section, .landing-pages-section {
+    display: flex;
     margin-bottom: 0;
-    /*! margin-left: 2rem; */
     margin: 2rem auto;
     padding-left: 0;
     padding-right: 0;
   }
 
   .highlight-text__large, .highlight-text__small {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 130%;
     letter-spacing: -0.8px;
   }
@@ -2489,8 +2489,9 @@ p.large {
 
 @media screen and (width <= 479px) {
   p.large {
-    font-size: 1rem;
-    letter-spacing: -.05rem;
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    line-height: 120%;
   }
   
   h1 {
@@ -2551,6 +2552,10 @@ p.large {
     margin-left: 0;
     margin-right: 0;
   }
+  
+  .content-div-center {
+    margin: 0;
+  }
 
   .highlight-text {
     box-sizing: border-box;
@@ -2590,7 +2595,7 @@ p.large {
   }
 
   .content-desc {
-    margin: .2rem 0.5rem;
+    margin: .2rem 0.7rem 0 0.9rem;
   }
 
   .cat-poster-wrap {
@@ -2633,7 +2638,8 @@ p.large {
 
   .banner-thumbnail {
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: 80% 50%;
+    min-height: 15rem;
   }
 
   .navigation-vertical {
@@ -2664,7 +2670,7 @@ p.large {
     justify-content: flex-start;
     align-items: flex-end;
     max-width: 100%;
-    margin: 3rem auto;
+    margin: 2rem auto 3rem;
   }
 
   .heading-big {
@@ -2708,12 +2714,12 @@ p.large {
   .project-summ {
     grid-gap: 0.7rem;
     flex-flow: column;
-    margin-bottom: 1rem;
+    margin: .5rem 0;
   }
 
   .intro-block {
     grid-gap: 0;
-    margin: auto 1.1rem 3rem;
+    margin: 1rem 0 2rem;
     padding: 0;
   }
 
@@ -2730,13 +2736,22 @@ p.large {
     margin-left: .8rem;
     margin-right: 14px;
   }
+  
+  .visual-direction {
+    margin: 1.5rem 0.5rem;
+  }
 
   .visuals-section, .landing-pages-section {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin:1.5rem .5rem;
+    padding:0;
+    max-width: 100%;
+    row-gap: 1rem;
+  }
+  
+  .landing-pages-section {
+    flex-direction: column;
+    overflow: scroll;
+    row-gap: 1rem;
   }
 
   .disc-desc {
