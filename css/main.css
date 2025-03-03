@@ -1357,8 +1357,7 @@ figcaption {
 }
 
 .small-indent {
-  margin-left: 1.5rem;
-  margin-top: .5rem;
+  margin: .5rem 1.5rem;
   display: block;
 }
 
@@ -2361,6 +2360,10 @@ p.large {
   .heading-big.friedman {
     margin-bottom: .5rem;
     padding-left: 1rem;
+    font-size: 3rem;
+  }
+  
+  .heading-big.assets {
     font-size: 3rem;
   }
 
