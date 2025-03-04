@@ -381,7 +381,8 @@ figcaption {
   /*! padding: 9px 0; */
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.2rem;
-  font-weight: 701;
+  font-weight: 800;
+  letter-spacing: -8%;
 }
 
 .navigation-item:hover {
@@ -1343,7 +1344,7 @@ figcaption {
   box-sizing: content-box;
   clear: none;
   color: #0f0f0f;
-  letter-spacing: -1.5px;
+  letter-spacing: -7%;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.4rem;
   font-weight: 500; 
@@ -1533,9 +1534,6 @@ figcaption {
 .challenges-2 {
   grid-gap: .2rem;
   flex-flow: column;
-  grid-template-rows: auto;
-  grid-template-columns: .25fr .75fr 1fr 1fr;
-  grid-auto-columns: 1fr;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -2164,6 +2162,8 @@ p.large {
   .assets-content {
     flex-flow: column;
     row-gap: 1rem;
+    max-height: 33rem;
+    overflow: scroll;
   }
 
   .rich-text {
@@ -2294,6 +2294,7 @@ p.large {
   grid-template-columns: 1fr;
   width: 100%;
   padding: 0 2rem;
+  margin: 1rem 0;
   }
 
   .cat-container{
@@ -2337,7 +2338,6 @@ p.large {
   }
 
   .challenges-1 {
-    margin: auto 1rem;
     grid-area: span 1;
   }
 
@@ -2512,7 +2512,7 @@ p.large {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    row-gap: 3.5rem;
+    row-gap: 2.5rem;
   }
 
   .screen-wrap {
@@ -2548,13 +2548,14 @@ p.large {
   .w-layout-hflex {
     flex-direction: column;
     row-gap: 1rem;
+    /*! overflow: scroll; */
   }
 }
 
 @media screen and (width <= 479px) {
   p.large {
     font-size: 0.9rem;
-    letter-spacing: -.05rem;
+    letter-spacing: -5.4%;
   }
   
   h1 {
@@ -2605,7 +2606,11 @@ p.large {
     font-size: 1.8rem;
   }
 
-
+  .closing-section {
+    padding: 0 1rem;
+    margin: 1rem 0;
+    row-gap: 1rem;
+  }
 
   .rich-text {
     width: 100%;
@@ -2812,9 +2817,9 @@ p.large {
   }
 
   .assets-content {
-    grid-gap: 0;
     margin-left: .8rem;
     margin-right: 14px;
+    max-height: 20rem;
   }
 
   .visuals-section, .landing-pages-section {
@@ -2827,12 +2832,13 @@ p.large {
   }
 
   .highlight-text__large, .highlight-text__small {
+    font-family: "Titillium Web", sans-serif;
     box-sizing: border-box;
     margin-bottom: 0;
     padding-bottom: 0;
     font-size: 0.9rem;
     position: static;
-    letter-spacing: -2.6%;
+    letter-spacing: -4.2%;
   }
 
   .text--wrapper__wide {
