@@ -861,7 +861,7 @@ figcaption {
   cursor: auto;
   object-fit: cover;
   background-clip: border-box;
-  width: auto;
+  width: 100%;
   max-height: none;
   margin-top: 0;
   margin-left: 0;
@@ -1555,14 +1555,34 @@ figcaption {
 }
 
 .poster-wrap {
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   min-width: auto;
   max-width: 70rem;
-  display: grid;
   position: relative;
   margin-bottom:2rem;
+}
+
+.vertical-scroll{
+  flex-flow: column;
+  overflow: scroll;
+  max-height: 80vh;
+}
+
+.vertical-scroll.landing-pages-section{
+  flex-flow: row;
+  overflow: none;
+  max-height: none;
+}
+
+.horizontal-scroll{
+  flex-flow: row;
+  overflow-x:auto;
+}
+
+.poster-wrap .horizontal-scroll{
+  display: flex;
+  flex-flow: row;
 }
 
 .content-bloc-narrow {
@@ -1766,6 +1786,12 @@ figcaption {
     position: relative;
   }
 
+  .vertical-scroll.landing-pages-section{
+    flex-flow: column;
+    overflow: scroll;
+    max-height: 80vh;
+  }
+
   label.dark-bar{
     font-size: .8rem;
   }
@@ -1893,6 +1919,7 @@ figcaption {
   .posters {
     max-height: 80vh;
     margin-top: 0;
+    width: 37rem;
   }
 
   .content-div-center.side-margin {
@@ -1906,6 +1933,13 @@ figcaption {
   .poster-wrap {
     min-width: fit-content;
     max-width: 70rem;
+  }
+
+  .poster-wrap .horizontal-scroll{
+    display: flex;
+    flex-flow: row;
+    overflow-x: auto;
+    max-height: 54rem;
   }
 
   .div-name {
@@ -2130,6 +2164,10 @@ p.large {
     text-align: center;
   }
 
+  .poster-wrap .horizontal-scroll{
+    max-height: 30rem;
+  }
+
   .cat-poster-wrap {
     margin-bottom: 0.5rem;
     flex-flow: row;
@@ -2333,6 +2371,12 @@ p.large {
     margin-right: auto;
     margin-bottom: 0;
   }
+  
+  .poster-wrap {
+    display: flex;
+    max-width: 100%;
+    overflow: scroll;
+  }
 
   .text--wrapper__medium {
     margin-left: 0;
@@ -2349,6 +2393,8 @@ p.large {
   .div-name {
     margin: 4rem auto;
     flex-direction: column;
+    max-width: 35rem;
+    padding: 2rem;
   }
 
   .heading-big {
@@ -2356,7 +2402,7 @@ p.large {
   }
 
   .heading-big.friedman {
-    margin-bottom: .5rem;
+    margin-bottom: 0;
     padding-left: 1rem;
     font-size: 3rem;
   }
@@ -2484,7 +2530,7 @@ p.large {
 
 @media screen and (width <= 479px) {
   p.large {
-    font-size: 1rem;
+    font-size: 0.9rem;
     letter-spacing: -.05rem;
   }
   
@@ -2554,9 +2600,8 @@ p.large {
     font-size: 1.7rem;
     line-height: 100%;
     position: static;
-  }
+  }  
   
-    
   .welcome-1 .highlight-text, .welcome-2 .highlight-text{
     font-size: 1.4rem;
     text-align: center;
@@ -2590,6 +2635,11 @@ p.large {
 
   .cat-poster-wrap {
     min-width: fit-content;
+  }
+
+  .posters {
+    object-fit: cover;
+    object-position: 100% 50%;
   }
 
   .cat-container {
@@ -2639,7 +2689,6 @@ p.large {
 
   .project-content-bloc {
     grid-gap: 0;
-    /*! max-width: 22.6rem; */
     margin: 0 .5rem;
   }
 
@@ -2647,10 +2696,9 @@ p.large {
     font-size: 1.2rem;
     font-weight: 400;
   }
-
-  .posters {
-    object-fit: cover;
-    object-position: 100% 50%;
+    
+  .poster-wrap {
+    grid-template-columns: 1fr;
   }
 
   .div-name {
@@ -2660,6 +2708,7 @@ p.large {
     align-items: flex-end;
     max-width: 100%;
     margin: 3rem auto;
+    padding: 0;
   }
 
   .heading-big {
@@ -2704,11 +2753,12 @@ p.large {
     grid-gap: 0.7rem;
     flex-flow: column;
     margin-bottom: 1rem;
+    margin: 1rem 0;
   }
 
   .intro-block {
     grid-gap: 0;
-    margin: auto 1.1rem 3rem;
+    margin: auto 0rem 3rem;
     padding: 0;
   }
 
@@ -2741,7 +2791,7 @@ p.large {
     padding-bottom: 0;
     font-size: 0.9rem;
     position: static;
-    letter-spacing: -4.1%;
+    letter-spacing: -2.6%;
   }
 
   .text--wrapper__wide {
