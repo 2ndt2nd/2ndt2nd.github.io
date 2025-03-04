@@ -2565,6 +2565,10 @@ p.large {
     margin-top: 3.5rem;
   }
 
+  .header-section. .heading-jumbo {
+    font-size: 1rem;
+  }
+
   .rich-text {
     width: 100%;
     max-width: none;
