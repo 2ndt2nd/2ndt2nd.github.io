@@ -1656,11 +1656,6 @@ textarea.w-select {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
-  color: #222;
-  padding: 20px;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .nav-link.w-current {
@@ -1793,6 +1788,8 @@ textarea.w-select {
 @media screen and (width <= 479px) {
   .w-nav[data-collapse='tiny'] .w-nav-menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .w-nav[data-collapse='tiny'] .w-nav-button {
