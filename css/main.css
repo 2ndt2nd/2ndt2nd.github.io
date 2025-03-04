@@ -2217,7 +2217,7 @@ figcaption {
   }
 
   .poster-wrap .horizontal-scroll{
-    max-height: 30rem;
+    max-height: 28rem;
   }
 
   .cat-poster-wrap {
@@ -2607,6 +2607,11 @@ figcaption {
     letter-spacing: -5.4%;
   }
   
+  p.condensed {
+    font-size: 0.6rem;
+    letter-spacing: -0.04rem;
+  }
+  
   h1 {
   margin-bottom: 0.2rem;
 }
@@ -2798,7 +2803,7 @@ figcaption {
   }
     
   .poster-wrap {
-    grid-template-columns: 1fr;
+    margin-top: 2rem;
   }
 
   .div-name {
