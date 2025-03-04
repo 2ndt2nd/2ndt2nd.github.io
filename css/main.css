@@ -378,11 +378,10 @@ figcaption {
   letter-spacing: 0;
   margin-left: 0;
   margin-right: auto;
-  padding: 9px 0;
+  /*! padding: 9px 0; */
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.2rem;
-  font-weight: 800;
-  line-height: 20px;
+  font-weight: 701;
 }
 
 .navigation-item:hover {
@@ -426,6 +425,15 @@ figcaption {
   display: flex;
 }
 
+    
+ .navigation-items-vert div{
+    display: flex;
+    flex-flow: column;
+    row-gap: 1rem;
+    justify-content: center;
+    width: fit-content;
+ }
+
 .navigation {
   z-index: 50;
   text-transform: none;
@@ -444,7 +452,6 @@ figcaption {
 }
 
 .navigation-wrapvert {
-  grid-gap: 1rem;
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
@@ -791,16 +798,14 @@ figcaption {
 }
 
 .navigation-items-vert {
-  grid-gap: .4rem;
+  grid-gap: 1rem;
   letter-spacing: -.04em;
   text-indent: 0;
   flex-flow: column;
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: .6rem;
-  font-size: 18px;
-  font-weight: 900;
+  margin-top: 1.4rem;
   display: flex;
 }
 
@@ -1650,8 +1655,6 @@ figcaption {
   display: block;
 }
 
-
-/* Social Links Container */
 .social-links {
   position: absolute;
   right: 1rem; /* Aligns social links 1 rem from the right */
@@ -1660,12 +1663,12 @@ figcaption {
   column-gap: 1rem; /* Spacing between icons */
 }
 
-/* Social Icon Links */
 .social-link {
   color: #333;
   font-size: 20px; /* Adjusts the size of the icons */
   text-decoration: none;
   transition: color 0.3s ease;
+  font-weight: 600;
 }
 
 .social-icon{
@@ -1729,7 +1732,7 @@ figcaption {
 
   .navigation-item {
     text-align: center;
-    padding: .5rem 1rem;
+    /*! padding: .5rem 1rem; */
     font-size: 17px;
     transition: background-color .4s, opacity .4s, color .4s;
   }
@@ -1750,6 +1753,14 @@ figcaption {
     margin-left: 0;
     display: flex;
   }
+
+  .navigation-items-vert div{
+    display: flex;
+    flex-flow: row;
+    column-gap: 1rem;
+    justify-content: center;
+    width: fit-content;
+ }
 
   .navigation {
     flex-flow: row;
@@ -1879,6 +1890,7 @@ figcaption {
     margin-top: auto;
     margin-left: 0;
     display: flex;
+    column-gap: 1rem;
   }
 
   .nav-wrap-vert {
@@ -2200,7 +2212,7 @@ p.large {
 
   .navigation-item {
     flex: 0 auto;
-    padding: 0.6rem 0.9rem 0;
+    /*! padding: 0.6rem 0.9rem 0; */
     font-weight: 710;
     display: block;
     letter-spacing: -8.4%;
@@ -2233,12 +2245,23 @@ p.large {
   .navigation-wrapvert {
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
+    margin: 0.7rem auto 0;
   }
 
   .footer-wrap {
+    display: flex;
     text-align: center;
     flex-direction: column;
+  }
+
+  .footer-wrap .social-links {
+    position: static;
+    justify-content: center; /* Align links to the right */
+  }
+
+  .footer-wrap .footer-container{
+    flex-flow: column;
+    row-gap: .2rem;
   }
 
   .utility-page-wrap {
@@ -2560,25 +2583,35 @@ p.large {
     padding-top: 3rem;
   }
 
+  .heading-jumbo {
+    font-size: 1.5rem;
+    line-height: 100%;
+    letter-spacing: -3.9%;
+  }
+
   .header-section {
     height: 15rem;
     margin-top: 3.5rem;
+    text-align: center;
+    justify-content: center;
   }
 
-  .header-section. .heading-jumbo {
-    font-size: 1rem;
+  .header-section div{
+    row-gap: 0.2rem;
   }
+
+  .header-section .heading-jumbo {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+
 
   .rich-text {
     width: 100%;
     max-width: none;
   }
 
-  .heading-jumbo {
-    font-size: 1.5rem;
-    line-height: 100%;
-    letter-spacing: -3.9%;
-  }
 
   .paragraph-bigger {
     margin-left: 0;
@@ -2590,6 +2623,10 @@ p.large {
   .navigation {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .navigation-items {
+    margin-bottom: 0;
   }
 
   .content-section.slide-in {
@@ -2823,8 +2860,10 @@ p.large {
   }
   
   .navigation-item {
-    padding: 0.6rem 0.7rem 0;
+    /*! padding: 0.6rem 0.7rem 0; */
     font-size: 0.7rem;
+    text-align: center;
+    margin: auto;
   }
 
   .demo-section {
