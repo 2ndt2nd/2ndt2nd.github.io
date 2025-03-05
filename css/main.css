@@ -35,14 +35,18 @@ section{
 }
 
 #content{
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+}
+
+#about {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
 }
 
 .spaced{
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-  /*! width: 100vw; */
 }
 
 h1 {
@@ -574,9 +578,6 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 100%;
-  height: 416.267px;
-  margin: 203px 140px;
   display: flex;
   position: relative;
 }
@@ -589,7 +590,7 @@ figcaption {
   width: auto;
   max-width: 76rem;
   height: auto;
-  margin: 2rem auto 5rem;
+  margin: 1rem auto 4rem;
   position: relative;
   top: 50px;
 }
@@ -683,7 +684,8 @@ figcaption {
 }
 
 .content-div-left.intro-summary {
-  margin:0, clamp(0, 2%, 2.5rem);
+  margin-top:3rem;
+  row-gap: 2rem;
 }
 
 .disclaimer {
@@ -973,7 +975,7 @@ figcaption {
   min-width: 41.7rem;
   max-width: 51.5rem;
   display: flex;
-  margin: 1.5rem 4rem;
+  margin: 1.5rem 1.5rem;
 }
 
 .name-block {
@@ -1026,7 +1028,7 @@ figcaption {
   flex-flow: column;
   min-width: 63rem;
   width: auto;
-  margin: 0 auto 5rem 0;
+  margin: 0 auto 3rem 0;
   padding-left: 0;
   padding-right: 2.5rem;
   font-weight: 500;
