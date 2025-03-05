@@ -623,7 +623,7 @@ figcaption {
   align-items: center;
   max-width: 100%;
   height: auto;
-  margin: 3rem auto;
+  margin: 5vh auto;
   padding: 0;
   display: flex;
   position: relative;
@@ -1069,7 +1069,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 5vh;
 }
 
 .content-desc {
@@ -1179,7 +1179,7 @@ figcaption {
 }
 
 .home-logo {
-  max-width: 9rem;
+  max-width: 7rem;
 }
 
 #hero-section {
@@ -1188,7 +1188,7 @@ figcaption {
   align-items: stretch;
   min-height: 80vh;
   margin: 0 auto;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
   display: flex;
 }
