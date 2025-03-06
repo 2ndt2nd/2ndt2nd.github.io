@@ -1589,7 +1589,7 @@ figcaption {
 
 .vertical-scroll.landing-pages-section{
   flex-flow: row;
-  overflow: none;
+  overflow: unset;
   max-height: none;
 }
 
