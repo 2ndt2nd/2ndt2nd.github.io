@@ -1,4 +1,8 @@
 /* stylelint-disable selector-class-pattern */
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --black: black;
   --white: white;
@@ -31,14 +35,18 @@ section{
 }
 
 #content{
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
+}
+
+#about {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
 }
 
 .spaced{
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
-  /*! width: 100vw; */
 }
 
 h1 {
@@ -120,7 +128,7 @@ p.large {
   margin-right: auto;
   padding: 0;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 135%;
 }
@@ -570,9 +578,6 @@ figcaption {
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 100%;
-  height: 416.267px;
-  margin: 203px 140px;
   display: flex;
   position: relative;
 }
@@ -585,7 +590,7 @@ figcaption {
   width: auto;
   max-width: 76rem;
   height: auto;
-  margin: 2rem auto 5rem;
+  margin: 1rem auto 4rem;
   position: relative;
   top: 50px;
 }
@@ -623,7 +628,7 @@ figcaption {
   align-items: center;
   max-width: 100%;
   height: auto;
-  margin: 3rem auto;
+  margin: 5vh auto;
   padding: 0;
   display: flex;
   position: relative;
@@ -679,7 +684,8 @@ figcaption {
 }
 
 .content-div-left.intro-summary {
-  margin:0, clamp(0, 2%, 2.5rem);
+  margin-top:3rem;
+  row-gap: 2rem;
 }
 
 .disclaimer {
@@ -708,7 +714,7 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   margin-top: 0;
-  padding: .7rem 2.5rem;
+  padding: .7rem 2rem;
   text-decoration: none;
   display: flex;
   position: relative;
@@ -882,7 +888,7 @@ figcaption {
   max-width: max-content;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 5.3rem;
+  margin-bottom: 0.9rem;
   position: relative;
   top: 0;
 }
@@ -969,7 +975,7 @@ figcaption {
   min-width: 41.7rem;
   max-width: 51.5rem;
   display: flex;
-  margin: 1.5rem 4rem;
+  margin: 1.5rem 1.5rem;
 }
 
 .name-block {
@@ -1022,7 +1028,7 @@ figcaption {
   flex-flow: column;
   min-width: 63rem;
   width: auto;
-  margin: 0 auto 5rem 0;
+  margin: 0 auto 3rem 0;
   padding-left: 0;
   padding-right: 2.5rem;
   font-weight: 500;
@@ -1069,7 +1075,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 2rem;
+  margin-top: 5vh;
 }
 
 .content-desc {
@@ -1179,7 +1185,7 @@ figcaption {
 }
 
 .home-logo {
-  max-width: 9rem;
+  max-width: 7rem;
 }
 
 #hero-section {
@@ -1188,7 +1194,7 @@ figcaption {
   align-items: stretch;
   min-height: 80vh;
   margin: 0 auto;
-  padding-top: 10vh;
+  padding-top: 5vh;
   padding-bottom: 10vh;
   display: flex;
 }
@@ -1654,7 +1660,7 @@ figcaption {
   place-items: start stretch;
   width: auto;
   max-width: 45rem;
-  margin: 3rem auto 4rem 0;
+  margin: 3rem auto 0 0;
   row-gap: .5rem;
   padding-left: 0;
   padding-right: 2.5rem;
@@ -1870,7 +1876,7 @@ figcaption {
   }
 
   .dark-bar {
-    padding:.8rem 2.5rem;
+    padding:.8rem 1rem;
   }
 
   .banner-tags {
@@ -2010,7 +2016,6 @@ figcaption {
     justify-content: flex-start;
     align-items: flex-start;
     max-width: none;
-    margin-top: 2rem;
     margin-left: 0;
     margin-right: 0;
     display: flex;
