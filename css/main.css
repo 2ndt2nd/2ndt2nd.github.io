@@ -628,7 +628,7 @@ figcaption {
   align-items: center;
   max-width: 100%;
   height: auto;
-  margin: 5vh auto;
+  margin: 8vh auto;
   padding: 0;
   display: flex;
   position: relative;
@@ -1075,7 +1075,7 @@ figcaption {
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-top: 5vh;
+  /*! margin-top: 5vh; */
 }
 
 .content-desc {
