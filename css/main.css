@@ -1601,7 +1601,7 @@ figcaption {
 
 .horizontal-scroll{
   flex-flow: row;
-  overflow-x:auto;
+  /*! overflow-x:auto; */
 }
 
 .poster-wrap .horizontal-scroll{
@@ -1954,7 +1954,7 @@ figcaption {
   .posters {
     max-height: 80vh;
     margin-top: 0;
-    width: 37rem;
+    /*! width: 37rem; */
   }
 
   .content-div-center.side-margin {
@@ -1972,8 +1972,8 @@ figcaption {
 
   .poster-wrap .horizontal-scroll{
     display: flex;
-    flex-flow: row;
-    overflow-x: auto;
+    /*! flex-flow: row; */
+    /*! overflow-x: auto; */
     max-height: 32rem;
   }
 
@@ -2129,13 +2129,10 @@ figcaption {
   }
 
   .site-showcase {
-    grid-gap: 2.6rem;
-    grid-template-rows: auto auto;
-    grid-template-columns: .4fr;
-    grid-auto-columns: 1fr;
     margin: 0 auto;
     padding: 0 2rem;
-    display: block;
+    display: flex;
+    gap: 2rem;
   }
 
   .cover-wrap-marginless {
