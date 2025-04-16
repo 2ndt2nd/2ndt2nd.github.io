@@ -1047,7 +1047,7 @@ figcaption {
 .text--wrapper__small {
   grid-gap: 0.4rem .1rem;
   flex-flow: column;
-  max-width: 47rem;
+  max-width: 48.3rem;
   margin-left: 0;
   display: flex;
   width: auto;
@@ -1366,7 +1366,7 @@ figcaption {
   box-sizing: content-box;
   clear: none;
   color: #0f0f0f;
-  letter-spacing: -7%;
+  letter-spacing: -4%;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.4rem;
   font-weight: 500; 
