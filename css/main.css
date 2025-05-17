@@ -1265,7 +1265,6 @@ figcaption {
   row-gap: 3rem;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: flex-end;
   max-width: 94rem;
   margin: 2rem auto;
   padding-left: 2.5rem;
