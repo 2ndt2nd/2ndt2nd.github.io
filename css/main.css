@@ -19,7 +19,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 28px;
-  margin-left: 12rem;
+  margin-left: 10rem;
   background-color: #fff;
   background-image: url('../images/white-body-bg.png');
   background-repeat: repeat;
@@ -88,7 +88,7 @@ h4 {
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  margin: .2rem 0 .1rem;
+  margin: .2rem 0 0rem;
 }
 
 
@@ -112,7 +112,7 @@ h6 {
 p {
   color: #0f0f0f;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 135%;
   margin: 0;
 }
@@ -122,15 +122,9 @@ p.medium {
 }
 
 p.large {
-  opacity: 1;
-  color: #0f0f0f;
-  margin-left: 0;
-  margin-right: auto;
-  padding: 0;
-  font-family: "Titillium Web", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 135%;
+  line-height: 130%;
 }
 
 p.condensed {
@@ -386,14 +380,12 @@ figcaption {
 .navigation-item {
   transition: transform 0.5s ease;
   color: #fff;
-  letter-spacing: 0;
   margin-left: 0;
   margin-right: auto;
-  /*! padding: 9px 0; */
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -8%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0%;
 }
 
 .navigation-item:hover {
@@ -441,7 +433,7 @@ figcaption {
  .navigation-items-vert div{
     display: flex;
     flex-flow: column;
-    row-gap: 1rem;
+    row-gap: 0.6rem;
     justify-content: center;
     width: fit-content;
  }
@@ -564,7 +556,7 @@ figcaption {
   object-fit: contain;
   justify-content: center;
   align-items: center;
-  width: 6.3rem;
+  width: 5.2rem;
   height: auto;
   margin-left: 0;
   margin-right: 0;
@@ -656,11 +648,11 @@ figcaption {
 
 .set {
   color: var(--black);
-  letter-spacing: -0.05rem;
+  letter-spacing: -5.05%;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  line-height: 140%;
+  line-height: 130%;
 }
 
 .body-3 {
@@ -714,7 +706,7 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   margin-top: 0;
-  padding: .7rem 2rem;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
   display: flex;
   position: relative;
@@ -790,7 +782,7 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   width: auto;
-  min-width: 12rem;
+  min-width: 9rem;
   height: 100%;
   margin-top: 0;
   margin-left: 0;
@@ -804,14 +796,14 @@ figcaption {
 }
 
 .navigation-items-vert {
-  grid-gap: 1rem;
+  grid-gap: 0.6rem;
   letter-spacing: -.04em;
   text-indent: 0;
   flex-flow: column;
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 1.4rem;
+  margin-top: 0.6rem;
   display: flex;
 }
 
@@ -823,7 +815,7 @@ figcaption {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 0;
-  padding: .9rem 3.7rem;
+  padding: 0.9rem 3.7rem;
   padding-left: 0;
   padding-right: 0;
 }
@@ -834,7 +826,7 @@ figcaption {
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
-  max-width: 40rem;
+  max-width: 23rem;
   margin: 1.4rem auto 0;
   font-weight: 500;
   display: flex;
@@ -975,7 +967,7 @@ figcaption {
   min-width: 41.7rem;
   max-width: 51.5rem;
   display: flex;
-  margin: 1.5rem 1.5rem;
+  margin: 1.5rem;
 }
 
 .name-block {
@@ -995,14 +987,16 @@ figcaption {
 
 .medium-section {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
   max-width: 109.4rem;
   margin: 1rem auto 0;
-  padding: 0 4.5rem;
+  /*! padding: 0 4.5rem; */
   position: relative;
+  width: auto;
+  flex-shrink: unset;
 }
 
 .project-summ {
@@ -1047,7 +1041,7 @@ figcaption {
 .text--wrapper__small {
   grid-gap: 0.4rem .1rem;
   flex-flow: column;
-  max-width: 48.3rem;
+  max-width: 49.9rem;
   margin-left: 0;
   display: flex;
   width: auto;
@@ -1080,7 +1074,8 @@ figcaption {
 
 .content-desc {
   margin-top: .4rem;
-  margin-left: 2rem;
+  margin-left: 1.2rem;
+  margin: 0.5rem 0.9rem 0;
 }
 
 .image-8, .image-9 {
@@ -1124,7 +1119,7 @@ figcaption {
 
 .bar-section {
   font-style: normal;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -1154,7 +1149,7 @@ figcaption {
   flex-flow: wrap;
   justify-content: center;
   width: auto;
-  max-width: 62rem;
+  max-width: 46rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1365,9 +1360,10 @@ figcaption {
   box-sizing: content-box;
   clear: none;
   color: #0f0f0f;
-  letter-spacing: -4%;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.4rem;
+  letter-spacing: 8%;
+  font-family: "Titillium Web", sans-serif;
+  /*! letter-spacing: -4%; */
+  font-size: 1.1rem;
   font-weight: 500; 
   line-height: 135%;
   position: relative;
@@ -1376,7 +1372,7 @@ figcaption {
 
 .text--wrapper__medium.content-desc {
   margin-top: 0.7rem;
-  margin-left: 2.5rem;
+  margin-left: 1.5rem;
 }
 
 .small-indent {
@@ -1581,9 +1577,9 @@ figcaption {
   display: flex;
   flex-direction: column;
   min-width: auto;
-  max-width: 70rem;
+  max-width: 46rem;
   position: relative;
-  margin-bottom:2rem;
+  /*! margin-bottom:2rem; */
 }
 
 .vertical-scroll{
@@ -1600,7 +1596,6 @@ figcaption {
 
 .horizontal-scroll{
   flex-flow: row;
-  /*! overflow-x:auto; */
 }
 
 .poster-wrap .horizontal-scroll{
@@ -1611,8 +1606,8 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 35rem;
-  margin: 2rem 3rem;
+  max-width: 22rem;
+  margin: 2rem 1rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1932,6 +1927,7 @@ figcaption {
     margin: auto;
     display: flex;
     top: 0;
+    max-width: 21rem;
   }
 
   .visual-direction {
@@ -1940,7 +1936,7 @@ figcaption {
     justify-content: center;
     width: auto;
     max-width: 62rem;
-    margin: 3rem 2rem;
+    margin: 1rem 2rem;
     display: flex;
   }
 
@@ -2190,7 +2186,7 @@ figcaption {
 
   p.large {
     font-size: 1rem;
-    letter-spacing: 1%;
+    letter-spacing: -4%;
   }
 
   p.condensed {
@@ -2437,7 +2433,7 @@ figcaption {
   }
 
   .project-content-bloc {
-    max-width: 25.4rem;
+    max-width: 24.4rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -2446,7 +2442,6 @@ figcaption {
   .poster-wrap {
     display: flex;
     max-width: 100%;
-    overflow: scroll;
   }
 
   .text--wrapper__medium {
@@ -2471,7 +2466,7 @@ figcaption {
   }
 
   .div-name {
-    margin: 4rem auto;
+    margin: 2rem auto;
     flex-direction: column;
     max-width: 35rem;
     padding: 2rem;
@@ -2802,7 +2797,7 @@ figcaption {
 
   .project-content-bloc {
     grid-gap: 0;
-    margin: 0 .5rem;
+    /*! margin: 0 .5rem; */
   }
 
   .paragraph {
@@ -2854,8 +2849,8 @@ figcaption {
   }
 
   .medium-section {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: .5rem;
   }
 
   .image-2 {
