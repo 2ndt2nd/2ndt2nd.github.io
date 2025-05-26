@@ -19,7 +19,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 28px;
-  margin-left: 12rem;
+  margin-left: 10rem;
   background-color: #fff;
   background-image: url('../images/white-body-bg.png');
   background-repeat: repeat;
@@ -88,7 +88,7 @@ h4 {
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
-  margin: .2rem 0 .1rem;
+  margin: .2rem 0 0rem;
 }
 
 
@@ -112,7 +112,7 @@ h6 {
 p {
   color: #0f0f0f;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 135%;
   margin: 0;
 }
@@ -122,9 +122,19 @@ p.medium {
 }
 
 p.large {
+<<<<<<< HEAD
   font-size: 1.2rem;
+=======
+  opacity: 1;
+  color: #0f0f0f;
+  margin-left: 0;
+  margin-right: auto;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.1rem;
+>>>>>>> cae6e5cd98d5d256648a9ffc2166da5cc33fce06
   font-weight: 400;
-  line-height: 135%;
+  line-height: 130%;
 }
 
 p.condensed {
@@ -383,9 +393,9 @@ figcaption {
   margin-left: 0;
   margin-right: auto;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 800;
-  letter-spacing: -8%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0%;
 }
 
 .navigation-item:hover {
@@ -433,7 +443,7 @@ figcaption {
  .navigation-items-vert div{
     display: flex;
     flex-flow: column;
-    row-gap: 1rem;
+    row-gap: 0.6rem;
     justify-content: center;
     width: fit-content;
  }
@@ -556,7 +566,7 @@ figcaption {
   object-fit: contain;
   justify-content: center;
   align-items: center;
-  width: 6.3rem;
+  width: 5.2rem;
   height: auto;
   margin-left: 0;
   margin-right: 0;
@@ -650,7 +660,7 @@ figcaption {
   color: var(--black);
   letter-spacing: -0.05rem;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 140%;
 }
@@ -706,7 +716,7 @@ figcaption {
   align-items: flex-start;
   width: 100%;
   margin-top: 0;
-  padding: .7rem 2rem;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
   display: flex;
   position: relative;
@@ -782,7 +792,7 @@ figcaption {
   justify-content: center;
   align-items: flex-start;
   width: auto;
-  min-width: 12rem;
+  min-width: 9rem;
   height: 100%;
   margin-top: 0;
   margin-left: 0;
@@ -796,14 +806,14 @@ figcaption {
 }
 
 .navigation-items-vert {
-  grid-gap: 1rem;
+  grid-gap: 0.6rem;
   letter-spacing: -.04em;
   text-indent: 0;
   flex-flow: column;
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 1.4rem;
+  margin-top: 0.6rem;
   display: flex;
 }
 
@@ -815,7 +825,7 @@ figcaption {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 0;
-  padding: .9rem 3.7rem;
+  padding: 0.9rem 3.7rem;
   padding-left: 0;
   padding-right: 0;
 }
@@ -826,7 +836,7 @@ figcaption {
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
-  max-width: 40rem;
+  max-width: 23rem;
   margin: 1.4rem auto 0;
   font-weight: 500;
   display: flex;
@@ -987,14 +997,16 @@ figcaption {
 
 .medium-section {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: center;
   max-width: 109.4rem;
   margin: 1rem auto 0;
-  padding: 0 4.5rem;
+  /*! padding: 0 4.5rem; */
   position: relative;
+  width: auto;
+  flex-shrink: unset;
 }
 
 .project-summ {
@@ -1072,7 +1084,8 @@ figcaption {
 
 .content-desc {
   margin-top: .4rem;
-  margin-left: 2rem;
+  margin-left: 1.2rem;
+  margin: 0.5rem 1.2rem 0;
 }
 
 .image-8, .image-9 {
@@ -1357,8 +1370,13 @@ figcaption {
   box-sizing: content-box;
   clear: none;
   color: #0f0f0f;
+<<<<<<< HEAD
   letter-spacing: 8%;
   font-family: "Titillium Web", sans-serif;
+=======
+  letter-spacing: -4%;
+  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
+>>>>>>> cae6e5cd98d5d256648a9ffc2166da5cc33fce06
   font-size: 1.1rem;
   font-weight: 500; 
   line-height: 135%;
@@ -1603,8 +1621,8 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 35rem;
-  margin: 2rem 3rem;
+  max-width: 22rem;
+  margin: 2rem 1rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1932,7 +1950,7 @@ figcaption {
     justify-content: center;
     width: auto;
     max-width: 62rem;
-    margin: 3rem 2rem;
+    margin: 1rem 2rem;
     display: flex;
   }
 
@@ -2221,7 +2239,7 @@ figcaption {
   }
 
   .cat-poster-wrap {
-    margin-bottom: 0.5rem;
+    margin-bottom: 4.7rem;
     flex-flow: row;
     overflow-x: auto;
     width: 100%;
@@ -2429,7 +2447,7 @@ figcaption {
   }
 
   .project-content-bloc {
-    max-width: 25.4rem;
+    max-width: 20.4rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -2463,7 +2481,7 @@ figcaption {
   }
 
   .div-name {
-    margin: 4rem auto;
+    margin: 2rem auto;
     flex-direction: column;
     max-width: 35rem;
     padding: 2rem;
