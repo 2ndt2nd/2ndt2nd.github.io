@@ -122,12 +122,6 @@ p.medium {
 }
 
 p.large {
-  opacity: 1;
-  color: #0f0f0f;
-  margin-left: 0;
-  margin-right: auto;
-  padding: 0;
-  font-family: "Titillium Web", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 135%;
@@ -386,10 +380,8 @@ figcaption {
 .navigation-item {
   transition: transform 0.5s ease;
   color: #fff;
-  letter-spacing: 0;
   margin-left: 0;
   margin-right: auto;
-  /*! padding: 9px 0; */
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.2rem;
   font-weight: 800;
@@ -975,7 +967,7 @@ figcaption {
   min-width: 41.7rem;
   max-width: 51.5rem;
   display: flex;
-  margin: 1.5rem 1.5rem;
+  margin: 1.5rem;
 }
 
 .name-block {
@@ -1365,9 +1357,9 @@ figcaption {
   box-sizing: content-box;
   clear: none;
   color: #0f0f0f;
-  letter-spacing: -4%;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 1.4rem;
+  letter-spacing: 8%;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.1rem;
   font-weight: 500; 
   line-height: 135%;
   position: relative;
