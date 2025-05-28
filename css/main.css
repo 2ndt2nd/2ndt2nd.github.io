@@ -31,7 +31,7 @@ body {
 }
 
 section{
-  margin-bottom: 3rem;
+  margin: 4rem auto 3rem;
 }
 
 #content{
@@ -40,7 +40,7 @@ section{
 
 #about {
   margin-top: 2rem;
-  margin-left: 1.5rem;
+  margin: auto;
 }
 
 .spaced{
@@ -156,6 +156,7 @@ li {
 
 img {
   display: block;
+  width: 100%;
 }
 
 label {
@@ -459,7 +460,7 @@ figcaption {
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
-  margin: auto;
+  margin: auto 3rem;
   display: flex;
 }
 
@@ -572,6 +573,7 @@ figcaption {
   width: 80%;
   display: flex;
   position: relative;
+  padding: 1rem;
 }
 
 .content-section.slide-in {
@@ -834,7 +836,7 @@ figcaption {
 }
 
 .project-content-bloc.screens {
-  max-width: 35rem;
+  max-width: 28rem;
 }
 
 .content-wrap {
@@ -909,9 +911,15 @@ figcaption {
 }
 
 .div-name {
-  max-width: 80%;
-  margin: 5.7rem auto 18rem;
+  max-width: 53rem;
+  margin: 5.7rem auto 15rem;
   position: relative;
+  align-items: center;
+  display: flex;
+}
+
+.div-name img{
+  width: auto;
 }
 
 .heading-big {
@@ -973,8 +981,7 @@ figcaption {
 .name-block {
   grid-gap: .3rem;
   flex-flow: column;
-  min-width: 41.7rem;
-  max-width: 57.5rem;
+  max-width: 42.8rem;
   display: flex;
   position: absolute;
   bottom: -40%;
@@ -1095,7 +1102,7 @@ figcaption {
 }
 
 .content-div-center.side-margin {
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 .content-div-center.bottom-align {
@@ -1118,7 +1125,7 @@ figcaption {
 
 .bar-section {
   font-style: normal;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 
@@ -1186,11 +1193,13 @@ figcaption {
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
-  min-height: 80vh;
-  margin: 0 auto;
+  margin: auto;
   padding-top: 5vh;
-  padding-bottom: 10vh;
   display: flex;
+}
+
+.image-100{
+  width: 100%;
 }
 
 .image-13 {
@@ -1260,7 +1269,7 @@ figcaption {
   flex-flow: column;
   justify-content: flex-start;
   max-width: 94rem;
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   display: flex;
