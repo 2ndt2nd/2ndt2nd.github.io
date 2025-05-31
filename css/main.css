@@ -254,21 +254,18 @@ figcaption {
 .heading-jumbo {
   box-sizing: content-box;
   color: #0f0f0f;
-  letter-spacing: -3px;
+  letter-spacing: 9px;
   text-transform: none;
-  flex-flow: row;
   flex: 0 auto;
   min-width: auto;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Titillium Web", sans-serif;
-  font-size: 90px;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: 590;
   line-height: 80px;
   display: block;
   position: static;
-  top: 14rem;
-  bottom: auto;
 }
 
 .paragraph.tiny {
@@ -669,8 +666,8 @@ figcaption {
 
 .content-div-left {
   flex-flow: column;
-  max-width: 99.4rem;
-  margin: 1rem clamp(0%,5%,6.5rem) 2rem;
+  max-width: 74rem;
+  margin: 1rem auto 2rem;
   display: flex;
   position: static;
 }
@@ -909,11 +906,12 @@ figcaption {
 }
 
 .div-name {
-  max-width: 53rem;
+  max-width: 59rem;
   margin: 5.7rem auto 15rem;
   position: relative;
   align-items: center;
   display: flex;
+  padding: 0rem;
 }
 
 .div-name img{
@@ -1022,7 +1020,7 @@ figcaption {
 }
 
 .intro-block {
-  grid-gap: 1.1rem;
+  grid-gap: 0.4rem;
   flex-flow: column;
   min-width: 63rem;
   width: auto;
@@ -1630,7 +1628,7 @@ figcaption {
   justify-content: flex-start;
   place-items: start stretch;
   min-width: auto;
-  max-width: 90rem;
+  max-width: 58rem;
   margin-left: auto;
   margin-right: auto;
   display: grid;
