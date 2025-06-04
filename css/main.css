@@ -667,7 +667,7 @@ figcaption {
 .content-div-left {
   flex-flow: column;
   max-width: 74rem;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 2rem 2.5rem;
   display: flex;
   position: static;
 }
@@ -714,9 +714,10 @@ figcaption {
   width: fit-content;
 }
 
-.dark-bar.heading-medium {
-  padding: 0;
-  color: #fff;
+.dark-bar div {
+  margin: auto;
+  min-width: 74rem;
+  padding: 0 2rem;
 }
 
 .frame-6 {
@@ -994,23 +995,21 @@ figcaption {
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 75rem;
+  max-width: 72rem;
   margin: auto;
   position: relative;
   width: auto;
-  /*! padding: 5rem; */
+  padding: 1.5rem;
 }
 
 .project-summ {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 7rem;
-  justify-content: flex-start;
-  place-items: start stretch;
   width: auto;
-  max-width: 80rem;
-  margin: 0 2.5rem 0 0;
-  padding-right: 0;
+  max-width: 68rem;
+  margin: 0 auto 2.5rem;
+  padding: 0 3rem;
   font-weight: 500;
   position: relative;
 }
@@ -1022,14 +1021,13 @@ figcaption {
 .intro-block {
   grid-gap: 0.4rem;
   flex-flow: column;
-  min-width: 63rem;
-  width: auto;
-  margin: 0 auto 3rem 0;
-  padding-left: 0;
-  padding-right: 2.5rem;
+  min-width: 67rem;
+  max-width: 69rem;
+  padding: 0 5rem;
   font-weight: 500;
   display: flex;
   position: relative;
+  margin: auto;
 }
 
 .introduction {
@@ -1091,6 +1089,7 @@ figcaption {
   justify-content: center;
   position: relative;
   flex-flow: column;
+  margin: 2.5rem auto;
 }
 
 .wrap {
