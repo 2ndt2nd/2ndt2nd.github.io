@@ -25,7 +25,7 @@ body {
 }
 
 section{
-  margin: 3rem auto 3rem;
+  margin: 4rem auto 3rem;
 }
 
 #content{
@@ -611,9 +611,6 @@ figcaption {
 }
 
 .header-section {
-  z-index: 10;
-  clear: none;
-  place-content: stretch center;
   align-items: center;
   max-width: 100%;
   height: auto;
@@ -657,6 +654,11 @@ figcaption {
   background-image: url('images/white-body-bg.png');
   background-position: 0 0;
   background-size: 360px;
+}
+
+
+.intro-summary{
+  margin-top: 3rem;
 }
 
 .content-div-left {
@@ -711,15 +713,15 @@ figcaption {
 
 .dark-bar div {
   margin: auto;
-  min-width: 67rem;
-  padding: 0 2rem;
+  min-width: 69rem;
+  padding: 0;
 }
 
 .frame-6 {
   grid-column-gap: 8px;
   flex-wrap: wrap;
   display: flex;
-  padding: 0;
+  align-items: center;
 }
 
 .banner-tags {
@@ -738,9 +740,8 @@ figcaption {
   letter-spacing: -.05em;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 5px;
-  font-weight: 700;
-  line-height: 119%;
+  font-size: 0.5rem;
+  line-height: 118.9%;
   text-decoration: none;
 }
 
@@ -830,10 +831,10 @@ figcaption {
 .cover-wrap {
   flex-flow: column;
   flex: 0 auto;
-  min-width: 100%;  
+  max-width: 51.6rem;  
   justify-content: flex-start;
   align-items: center;
-  margin: 0 0 auto;
+  margin: 0 auto auto;
   display: flex;
   position: relative;
   top: 0;
@@ -961,9 +962,9 @@ figcaption {
   grid-gap: 0.5rem;
   flex-flow: column;
   min-width: 41.7rem;
-  max-width: 47.5rem;
+  max-width: 51.5rem;
   display: flex;
-  margin: 0 1.5rem 1rem;
+  margin: 1.5rem;
 }
 
 .name-block {
@@ -1012,9 +1013,9 @@ figcaption {
 .intro-block {
   grid-gap: 0.4rem;
   flex-flow: column;
-  min-width: 63.9rem;
+  min-width: 67rem;
   max-width: 69rem;
-  padding: 0 3rem;
+  padding: 0 5rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1080,14 +1081,7 @@ figcaption {
   justify-content: center;
   position: relative;
   flex-flow: column;
-  margin: 1.5rem auto 1rem;
-  max-width: 67rem;
-  padding: 0 3rem;
-}
-
-
-.content-div-center.intro-summary{
-  margin-top: 3rem;
+  margin: 2.5rem auto;
 }
 
 .wrap {
@@ -1118,6 +1112,7 @@ figcaption {
 
 .bar-section {
   font-style: normal;
+  margin-bottom: 6rem;
 }
 
 
@@ -1130,6 +1125,7 @@ figcaption {
 
 
 ._3-wide-div {
+  grid-area: span 1 / span 3 / span 1 / span 3;
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
@@ -1157,6 +1153,15 @@ figcaption {
   flex-flow: column;
   align-items: center;
   min-width: 37rem;
+  margin: auto;
+}
+
+.header-section div h1{
+  /*! grid-gap: 0; */
+  /*! flex-flow: column; */
+  font-size: 4.6rem;
+  letter-spacing: 4%;
+  line-height: 82%;
 }
 
 .header-section div div{
@@ -1164,10 +1169,10 @@ figcaption {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-end;
-  /*! min-width: 37rem; */
   height: auto;
   display: flex;
   position: static;
+  font-size: 1.1rem;
 }
 
 .header-section .text--wrapper__tiny{
@@ -1178,6 +1183,7 @@ figcaption {
 
 .home-logo {
   max-width: 7rem;
+  margin: 0 auto 1.2rem;
 }
 
 #hero-section {
@@ -1498,7 +1504,7 @@ figcaption {
   flex: 0 auto;
   justify-content: flex-start;
   place-items: flex-start stretch;
-  max-width: 59rem;
+  max-width: 75rem;
   position: relative;
 }
 
