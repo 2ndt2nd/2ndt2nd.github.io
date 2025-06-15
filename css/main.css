@@ -1719,9 +1719,9 @@ figcaption {
   #hero-section {
     flex-flow: column;
     align-items: stretch;
-    min-height: 70vh;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    min-height: 60vh;
+    /*! padding-top: 2rem; */
+    /*! padding-bottom: 2rem; */
   }
 
   .styleguide-block {
@@ -2212,8 +2212,8 @@ figcaption {
   }
 
   #hero-section {
-    min-height: 76vh;
-    padding-top: 2rem;
+    /*! min-height: 76vh; */
+    padding-top: 6rem;
   }
 
   .assets-content {
