@@ -728,8 +728,9 @@ figcaption {
   line-height: 119%;
   text-decoration: none;
   align-content: center;
-  min-width: 0rem;
+  max-width: 0rem;
   padding: 0;
+  margin: 0;
 }
 
 .dark-bar div.frame-6 {
