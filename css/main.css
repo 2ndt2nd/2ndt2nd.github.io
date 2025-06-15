@@ -255,7 +255,7 @@ figcaption {
 .heading-jumbo {
   box-sizing: content-box;
   color: #0f0f0f;
-  letter-spacing: 9px;
+  letter-spacing: -2px;
   text-transform: none;
   flex: 0 auto;
   min-width: auto;
