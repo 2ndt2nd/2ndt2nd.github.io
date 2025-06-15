@@ -972,7 +972,8 @@ figcaption {
   min-width: 41.7rem;
   max-width: 47.5rem;
   display: flex;
-  margin: 0 1.5rem 1rem;
+  margin: auto auto auto 4rem;
+  padding: 0.6rem 0 0.9rem;
 }
 
 .name-block {
@@ -3024,6 +3025,6 @@ figcaption {
   font-display: auto;
 }
 
-*{
+/* *{
   border: red solid 1px
-}
+} */
