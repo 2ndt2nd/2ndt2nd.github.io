@@ -2637,15 +2637,11 @@ figcaption {
 }
 
 @media screen and (width <= 479px) {
-  p {
-    font-size: 1rem;
-    line-height: 120%;
-    /*! letter-spacing: 1%; */
-  }
-  
-  p.large {
-    font-size: 0.9rem;
-    letter-spacing: -5.4%;
+  p, p.large {
+    max-width: 29rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0;
   }
   
   p.condensed {
@@ -2958,10 +2954,6 @@ figcaption {
     position: static;
     letter-spacing: -4.2%;
     width: auto;
-  }
-
-  .text--wrapper__wide {
-    margin: 0 1rem;
   }
 
   .text--wrapper__medium {
