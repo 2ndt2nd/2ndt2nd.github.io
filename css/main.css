@@ -18,10 +18,11 @@ body {
   background-image: url('../images/white-body-bg.png');
   background-repeat: repeat;
   background-size: auto;
-  background-attachment: fixed;
+  /*! background-attachment: fixed; */
   margin-top: 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   display: block;
+  /*! overflow: inherit; */
 }
 
 section{
@@ -711,8 +712,9 @@ figcaption {
 
 .dark-bar div {
   margin: auto;
-  min-width: 72rem;
-  padding: 0 2rem;
+  max-width: 71rem;
+  padding: 0 0 0 2rem;
+  width: 100%;
 }
 
 
@@ -775,7 +777,7 @@ figcaption {
   align-items: flex-start;
   width: auto;
   min-width: 9rem;
-  height: 100%;
+  height: 100vh;
   margin-top: 0;
   margin-left: 0;
   padding: 0;
@@ -785,6 +787,7 @@ figcaption {
   position: fixed;
   top: 0;
   left: 0;
+  /*! bottom: 0; */
 }
 
 .navigation-items-vert {
@@ -1018,13 +1021,13 @@ figcaption {
 .intro-block {
   grid-gap: 0.4rem;
   flex-flow: column;
-  min-width: 67.9rem;
   max-width: 69rem;
   padding: 0 3rem;
   font-weight: 500;
   display: flex;
   position: relative;
   margin: auto;
+  margin-left: 0;
 }
 
 .introduction {
@@ -1606,7 +1609,7 @@ figcaption {
   flex-flow: wrap;
   width: auto;
   max-width: 28rem;
-  margin: 2rem 1rem;
+  margin: 1.4rem 1rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1875,6 +1878,12 @@ figcaption {
   .dark-bar {
     padding:.8rem 1rem;
   }
+  
+  .dark-bar div {
+    padding: 0;
+    margin-left: 2rem;
+    width: auto;
+  }
 
   .banner-tags {
     font-size: .8rem;
@@ -1892,7 +1901,6 @@ figcaption {
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -1939,7 +1947,7 @@ figcaption {
     justify-content: center;
     width: auto;
     max-width: 62rem;
-    margin: 1rem .5rem;
+    margin: 1rem 5rem;
     display: flex;
   }
 
@@ -2412,6 +2420,8 @@ figcaption {
   
   .dark-bar div {
     padding: 0;
+    min-width: 100%;
+    margin: 0;
   }
 
   .frame-6 {
@@ -2627,6 +2637,12 @@ figcaption {
 }
 
 @media screen and (width <= 479px) {
+  p {
+    font-size: 1rem;
+    line-height: 120%;
+    /*! letter-spacing: 1%; */
+  }
+  
   p.large {
     font-size: 0.9rem;
     letter-spacing: -5.4%;
@@ -2721,7 +2737,14 @@ figcaption {
   
   .developing-image {
     min-height: auto;
+    max-height: 12rem;
+    width: 100%;
+    object-fit: contain;
+    padding: .5rem;
+    background:white;
   }
+  
+  
 
   .highlight-text {
     box-sizing: border-box;
@@ -2760,7 +2783,7 @@ figcaption {
   }
   
   .content-div-center {
-    margin: 1rem 0.5rem;
+    margin: 1rem 0;
     padding: 0;
   }
   
@@ -2770,7 +2793,7 @@ figcaption {
 
 
   .content-desc {
-    margin: .2rem 0.5rem;
+    margin: 0.5rem 1rem;
   }
 
   .cat-poster-wrap {
@@ -2795,12 +2818,16 @@ figcaption {
   }
 
   .content-bloc-narrow {
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 
   .dark-bar {
     grid-row-gap: .4rem;
     padding: 0.7rem 1rem;
+  }
+  
+  .dark-bar div{
+    margin: 0;
   }
 
   .frame-6 {
@@ -2878,7 +2905,7 @@ figcaption {
 
   .medium-section {
     margin: auto;
-    padding: .5rem;
+    padding: 0;
   }
 
   .div-name img {
@@ -3005,6 +3032,6 @@ figcaption {
   font-display: auto;
 }
 
-/* *{
+*{
   border: red solid 1px
-} */
+}
