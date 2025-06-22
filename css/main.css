@@ -153,6 +153,7 @@ img {
 
 iframe{
   max-width: 100%;
+  /*! max-width: 100%; */
 }
 
 label {
@@ -643,10 +644,10 @@ figcaption {
 
 .set {
   color: var(--black);
-  letter-spacing: -5.05%;
+  letter-spacing: 5.05%;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 410;
   line-height: 130%;
 }
 
@@ -706,7 +707,7 @@ figcaption {
 .dark-bar div {
   margin: auto;
   max-width: 71rem;
-  padding: 0 0 0 2rem;
+  padding: 0 -2 0 2rem;
   width: 100%;
 }
 
@@ -802,7 +803,7 @@ figcaption {
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
-  max-width: 29rem;
+  max-width: 32rem;
   margin: 1.4rem 0 0;
   font-weight: 500;
   display: flex;
@@ -951,7 +952,7 @@ figcaption {
   grid-gap: 0.5rem;
   flex-flow: column;
   min-width: 41.7rem;
-  max-width: 47.5rem;
+  max-width: 57.5rem;
   display: flex;
   margin: auto auto auto 4rem;
   padding: 0.6rem 0 0.9rem;
@@ -1001,7 +1002,7 @@ figcaption {
 }
 
 .intro-block {
-  grid-gap: 0.4rem;
+  grid-gap: 0.3rem;
   flex-flow: column;
   max-width: 69rem;
   padding: 0 3rem;
@@ -1057,7 +1058,7 @@ figcaption {
 .content-desc {
   margin-top: .4rem;
   margin-left: 1.2rem;
-  margin: 0.5rem 0.9rem 0;
+  margin: 0.4rem 1.5rem 0 1.2rem;
 }
 
 .image-8, .image-9 {
@@ -1138,7 +1139,7 @@ figcaption {
   flex-flow: wrap;
   justify-content: center;
   width: auto;
-  max-width: 46rem;
+  max-width: 47rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1338,15 +1339,15 @@ figcaption {
   color: #0f0f0f;
   letter-spacing: 5%;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500; 
-  line-height: 135%;
+  line-height: 145%;
   position: relative;
   top: auto;
 }
 
 .text--wrapper__medium.content-desc {
-  margin-top: 0.7rem;
+  margin-top: 0.3rem;
   margin-left: 1.5rem;
 }
 
@@ -1546,7 +1547,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   min-width: auto;
-  max-width: 46rem;
+  max-width: 47rem;
   position: relative;
   /*! margin-bottom:2rem; */
 }
@@ -1575,7 +1576,7 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 29rem;
+  max-width: 31rem;
   margin: 1.4rem 1rem;
   font-weight: 500;
   display: flex;
@@ -1829,6 +1830,7 @@ figcaption {
 
   .set {
     line-height: 140%;
+    font-size: 0.9rem;
   }
 
   .content-div-left {
@@ -1905,7 +1907,7 @@ figcaption {
     margin: auto;
     display: flex;
     top: 0;
-    max-width: 21rem;
+    max-width: 23rem;
   }
 
   .visual-direction {
@@ -2066,7 +2068,7 @@ figcaption {
 
   .text--wrapper__tiny {
     max-width: 34rem;
-    margin-top: .5rem;
+    margin-top: 0.4rem;
   }
   
   .text--wrapper__medium.content-desc {
@@ -2174,7 +2176,7 @@ figcaption {
   }
 
   iframe{
-    max-height: 20.3rem;
+    max-height: 19.6rem;
   }
 
   #hero-section {
@@ -2232,6 +2234,10 @@ figcaption {
     font-size: .9rem;
     font-weight: 400;
     line-height: 120%;
+  }
+  
+  .visual-direction {
+    margin: 1rem;
   }
 
   .logo-link {
@@ -2907,6 +2913,14 @@ figcaption {
     margin: 0;
     padding: 0;
   }
+  
+  .visual-direction {
+    margin: 0;
+  }
+  
+  .video-container{
+    margin-top: 1.5rem
+  }
 
   .disc-desc {
     font-size: .8rem;
@@ -2948,6 +2962,11 @@ figcaption {
     font-size: 0.7rem;
     text-align: center;
     margin: auto;
+  }
+  
+  
+  .text--wrapper__tiny {
+    margin-top: 0.2rem;
   }
 
   .demo-section {
@@ -2991,6 +3010,6 @@ figcaption {
   font-display: auto;
 }
 
-/* *{
-  border: red solid 1px
+*{
+/*   border: red solid 1px
 } */
