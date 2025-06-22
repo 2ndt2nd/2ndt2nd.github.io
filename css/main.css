@@ -18,11 +18,9 @@ body {
   background-image: url('../images/white-body-bg.png');
   background-repeat: repeat;
   background-size: auto;
-  /*! background-attachment: fixed; */
   margin-top: 0;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   display: block;
-  /*! overflow: inherit; */
 }
 
 section{
@@ -34,8 +32,7 @@ section{
 }
 
 #about {
-  margin-top: 2rem;
-  margin: auto;
+  margin: 2rem auto auto;
 }
 
 .spaced{
@@ -648,7 +645,7 @@ figcaption {
   color: var(--black);
   letter-spacing: -5.05%;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: 130%;
 }
@@ -691,23 +688,19 @@ figcaption {
 }
 
 .dark-bar {
-  grid-gap: .4rem 11rem;
-  color: #fff;
-  background-color: #0f0f0f;
-  flex-flow: column;
-  justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  background-color: #0f0f0f;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  grid-gap: .4rem 11rem;
+  justify-content: flex-start;
   margin-top: 0;
   padding: 0.6rem 1.2rem;
-  text-decoration: none;
-  display: flex;
   position: relative;
-  box-sizing: border-box;
-}
-
-.dark-bar.fit{
-  width: fit-content;
+  text-decoration: none;
+  width: 100%;
 }
 
 .dark-bar div {
@@ -719,38 +712,25 @@ figcaption {
 
 
 .dark-bar div .text-5 {
+  align-content: center;
   color: #fff;
-  letter-spacing: -.05em;
-  margin-top: 0;
-  margin-bottom: 0;
   font-size: 5px;
   font-weight: 700;
+  letter-spacing: -.05em;
   line-height: 119%;
-  text-decoration: none;
-  align-content: center;
+  margin: 0;
   max-width: fit-content;
   padding: 0;
-  margin: 0;
+  text-decoration: none;
 }
 
 .dark-bar div.frame-6 {
-  grid-column-gap: 8px;
-  flex-wrap: wrap;
   display: flex;
-  padding: 0;
-  min-width: 3rem;
+  flex-wrap: wrap;
+  grid-column-gap: 8px;
   margin: 0;
-}
-
-.banner-tags {
-  color: #fff;
-  letter-spacing: -.05em;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 119%;
-  text-decoration: none;
+  min-width: 3rem;
+  padding: 0;
 }
 
 .banner-thumbnail {
@@ -822,7 +802,7 @@ figcaption {
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
-  max-width: 25rem;
+  max-width: 29rem;
   margin: 1.4rem 0 0;
   font-weight: 500;
   display: flex;
@@ -1279,21 +1259,6 @@ figcaption {
   position: static;
 }
 
-.landing-pages-section {
-  grid-gap: 0;
-  flex-flow: row;
-  justify-content: flex-start;
-  align-items: stretch;
-  width: 100%;
-  max-width: none;
-  max-height: none;
-  margin: .4rem auto 3rem;
-  padding-left: 0;
-  padding-right: 0;
-  display: flex;
-  position: static;
-}
-
 .disc-desc {
   color: #fff;
   text-align: left;
@@ -1541,7 +1506,7 @@ figcaption {
 .site-showcase {
   display: flex;
   position: relative;
-  flex-flow: wrap;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   row-gap: 3rem;
@@ -1610,7 +1575,7 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 28rem;
+  max-width: 29rem;
   margin: 1.4rem 1rem;
   font-weight: 500;
   display: flex;
