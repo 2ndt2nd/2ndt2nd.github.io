@@ -2463,6 +2463,7 @@ figcaption {
   .general-block {
     min-width: auto;
     max-width: 41.8rem;
+    margin: auto 1rem;
   }
   
   .name-block .text--wrapper__medium{
