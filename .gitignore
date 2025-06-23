@@ -4,4 +4,3 @@ build/
 *.min.css
 stylelint.config.js
 *.json
-*.jpg
