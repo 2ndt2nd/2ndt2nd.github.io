@@ -2512,7 +2512,7 @@ figcaption {
     margin-right: auto;
     row-gap: 2rem;
     max-width: 100%;
-    padding: 0;
+    padding: 0 1rem;
   }
 
   .image-2 {
@@ -2744,7 +2744,7 @@ figcaption {
 
   .set {
     max-width: 29rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0;
   }
@@ -2800,7 +2800,7 @@ figcaption {
   }
 
   .content-bloc-narrow {
-    margin: 1rem 0;
+    margin: 1rem .5rem;
   }
 
   .dark-bar {
@@ -2845,7 +2845,7 @@ figcaption {
   }
     
   .poster-wrap {
-    /*! margin-top: 2rem; */
+    margin: 0 1rem;
   }
 
   .div-name {
@@ -2887,7 +2887,6 @@ figcaption {
 
   .medium-section {
     margin: auto;
-    padding: 0;
   }
 
   .div-name img {
@@ -2979,7 +2978,7 @@ figcaption {
   
   
   .text--wrapper__tiny {
-    margin-top: 0.2rem;
+    margin-top: 0rem;
   }
 
   .demo-section {
@@ -2992,15 +2991,13 @@ figcaption {
 
   .project-challenge-bloc, .site-content-bloc, .site-content-bloc-wide {
     grid-gap: 0;
-    margin: 0;
+    margin: 0 .5rem;
   }
 
   .site-showcase {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 2rem 0 auto;
+    padding: 0;
+    row-gap: 1rem;
   }
 
   .video {
