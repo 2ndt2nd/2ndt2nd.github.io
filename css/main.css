@@ -27,12 +27,16 @@ section{
   margin: 3rem auto 2rem;
 }
 
+#about {
+  margin: 2rem auto auto;
+}
+
 #content{
   margin-bottom: 6rem;
 }
 
-#about {
-  margin: 2rem auto auto;
+#others{
+  margin-top: -1rem;
 }
 
 .spaced{
@@ -730,7 +734,6 @@ figcaption {
   flex-wrap: wrap;
   grid-column-gap: 8px;
   margin: 0;
-  min-width: 3rem;
   padding: 0;
 }
 
@@ -811,7 +814,7 @@ figcaption {
 }
 
 .project-content-bloc.screens {
-  max-width: 23rem;
+  max-width: 25rem;
 }
 
 .content-wrap {
@@ -1056,16 +1059,9 @@ figcaption {
 }
 
 .content-desc {
-  margin-top: .4rem;
-  margin-left: 1.2rem;
-  margin: 0.4rem 1.5rem 0 1.2rem;
+  margin: 0.4rem 1.5rem 0 1.6rem;
 }
 
-.image-8, .image-9 {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 
 .content-div-center {
   display: flex;
@@ -1079,7 +1075,7 @@ figcaption {
 
 
 .content-div-center.intro-summary{
-  margin: 3rem auto 3rem;
+  margin: 3rem auto;
   max-width: 74rem;
 }
 
@@ -1140,9 +1136,9 @@ figcaption {
   justify-content: center;
   width: auto;
   max-width: 47rem;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
+  padding: 0 3rem;
+  margin: auto;
 }
 
 .header-section div{
@@ -1171,6 +1167,15 @@ figcaption {
 
 .home-logo {
   max-width: 7rem;
+}
+
+.hover-scale{
+  transition: transform 0.5s ease;
+}
+
+.hover-scale:hover{
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
 }
 
 #hero-section {
@@ -1586,7 +1591,7 @@ figcaption {
 .developing-image {
   object-fit: cover;
   object-position: 50% 50%;
-  min-height: 20rem;
+  min-height: 22rem;
   width: auto;
   max-width: 100%;
 }
@@ -1816,10 +1821,6 @@ figcaption {
     margin-top: 2.3rem;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .header-section .text--wrapper__tiny{
-    margin-top: 1rem;
   }
 
   .frame-22 {
@@ -2060,6 +2061,7 @@ figcaption {
 
   .highlight-text__small {
     padding-bottom: 0;
+    font-size: 1.1rem;
   }
 
   .text--wrapper__medium {
@@ -2156,10 +2158,19 @@ figcaption {
 }
 
 @media screen and (width <= 780px) {
+  #content{
+    margin-bottom: 8rem;
+  }
+  
+  #others{
+    margin: -3rem 2rem 1rem 2rem;
+  }
+
+  
   p {
-  font-size: 0.9rem;
-  line-height: 120%;
-}
+    font-size: 0.9rem;
+    line-height: 120%;
+  }
 
   p.large {
     font-size: 1rem;
@@ -2317,6 +2328,7 @@ figcaption {
 
   .content-section.slide-in {
     height: auto;
+    padding: 0;
   }
 
   .highlight-text {
@@ -2529,7 +2541,7 @@ figcaption {
   }
 
   .content-div-center {
-    margin: 0rem auto;
+    margin: 0 auto;
     padding: 1rem;
   }
 
@@ -2891,7 +2903,7 @@ figcaption {
 
   .intro-block {
     grid-gap: 0;
-    margin: auto 1rem 0rem;
+    margin: auto 1rem 0;
     padding: 0;
   }
 
@@ -3010,6 +3022,6 @@ figcaption {
   font-display: auto;
 }
 
-*{
-/*   border: red solid 1px
+/* *{
+  border: red solid 1px
 } */
