@@ -994,7 +994,7 @@ figcaption {
   gap: 2rem 7rem;
   width: auto;
   max-width: 68rem;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2.5rem 0;
   padding: 0 3rem;
   font-weight: 500;
   position: relative;
@@ -1481,7 +1481,7 @@ figcaption {
   flex: 0 auto;
   justify-content: flex-start;
   place-items: flex-start stretch;
-  max-width: 47rem;
+  max-width: 53rem;
   position: relative;
 }
 
