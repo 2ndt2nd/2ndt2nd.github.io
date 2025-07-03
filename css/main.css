@@ -1076,7 +1076,7 @@ figcaption {
 
 
 .content-div-center.intro-summary{
-  margin: 3rem auto;
+  margin: 1rem auto;
   max-width: 74rem;
 }
 
@@ -1934,7 +1934,7 @@ figcaption {
   }
   
   .content-desc {
-    margin: .2rem 1rem;
+    margin: 0.4rem 1rem;
   }
 
   .poster-wrap {
@@ -2471,9 +2471,9 @@ figcaption {
   }
 
   .div-name {
-    margin: 1rem auto 10rem;
+    margin: 1rem auto 11rem;
     flex-direction: column;
-    max-width: 35rem;
+    max-width: 30rem;
     padding: 1.5rem;
     align-items: start;
   }
@@ -2499,8 +2499,9 @@ figcaption {
     /*! max-width: 33rem; */
     left: 9%;
     max-width: 28rem;
-    bottom: -27%;
+    bottom: -31%;
     /*! padding-bottom: 0rem; */
+    row-gap: 0.6rem;
   }
 
   .medium-section {
@@ -2516,7 +2517,7 @@ figcaption {
   }
 
   .project-summ {
-    grid-gap: .6rem;
+    grid-gap: 0.6rem;
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -2525,7 +2526,7 @@ figcaption {
   }
 
   .intro-block {
-    margin: 1rem;
+    margin: 0 1rem;
     padding: 0;
   }
 
@@ -2555,9 +2556,9 @@ figcaption {
   }
 
   .highlight-text__large, .highlight-text__small {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 130%;
-    /*! letter-spacing: -0.8px; */
+    letter-spacing: -3.9%;
   }
 
   .heading-medium {
@@ -2761,7 +2762,7 @@ figcaption {
   }
   
   .content-div-center {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     padding: 0;
   }
   
@@ -2941,7 +2942,7 @@ figcaption {
     padding-bottom: 0;
     font-size: 0.9rem;
     position: static;
-    letter-spacing: -4.2%;
+    letter-spacing: -2.7%;
     width: auto;
   }
 
