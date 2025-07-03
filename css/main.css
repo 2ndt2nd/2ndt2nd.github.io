@@ -1065,6 +1065,7 @@ figcaption {
 
 .content-div-center {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   position: relative;
   flex-flow: column;
@@ -1077,10 +1078,6 @@ figcaption {
 .content-div-center.intro-summary{
   margin: 3rem auto;
   max-width: 74rem;
-}
-
-.wrap {
-  flex-flow:wrap;
 }
 
 .content-div-center.side-margin {
@@ -1640,7 +1637,6 @@ figcaption {
 }
 
 .whiskr-container {
-  /*! margin-left: 5rem; */
   display: block;
 }
 
