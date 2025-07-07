@@ -998,7 +998,7 @@ figcaption {
   gap: 2rem 7rem;
   width: auto;
   max-width: 68rem;
-  margin: 0 auto 2.5rem 0;
+  margin: 0 auto 2.2rem 0;
   padding: 0 3rem;
   font-weight: 500;
   position: relative;
@@ -1080,7 +1080,7 @@ figcaption {
 
 
 .content-div-center.intro-summary{
-  margin: 1rem auto;
+  margin: 3rem auto;
   max-width: 74rem;
 }
 
