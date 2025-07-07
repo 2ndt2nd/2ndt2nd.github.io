@@ -8,6 +8,10 @@ html {
   --white: white;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   color: #1a1b1f;
   font-size: 1rem;
@@ -711,7 +715,7 @@ figcaption {
 .dark-bar div {
   margin: auto;
   max-width: 71rem;
-  padding: 0 -2 0 2rem;
+  padding: 0 0 0 2rem;
   width: 100%;
 }
 
