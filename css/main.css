@@ -1582,8 +1582,9 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 31rem;
-  margin: 1.4rem 1rem;
+  max-width: 33rem;
+  margin: 1.4rem auto;
+  padding: 0 1rem;
   font-weight: 500;
   display: flex;
   position: relative;
