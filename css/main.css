@@ -8,6 +8,10 @@ html {
   --white: white;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   color: #1a1b1f;
   font-size: 1rem;
@@ -628,6 +632,24 @@ figcaption {
   flex-flow: column;
 }
 
+.frame-22 {
+  grid-gap: .3rem;
+  flex-flow: column;
+  flex: 0 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+  max-width: 88rem;
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
 .set {
   color: var(--black);
   letter-spacing: 5.05%;
@@ -650,6 +672,11 @@ figcaption {
   margin: 1rem auto 2rem 2.5rem;
   display: flex;
   position: static;
+}
+
+.content-div-left.intro-summary {
+  margin-top:3rem;
+  row-gap: 2rem;
 }
 
 .disclaimer {
@@ -688,7 +715,7 @@ figcaption {
 .dark-bar div {
   margin: auto;
   max-width: 71rem;
-  padding: 0 -2 0 2rem;
+  padding: 0 0 0 2rem;
   width: 100%;
 }
 
@@ -971,7 +998,7 @@ figcaption {
   gap: 2rem 7rem;
   width: auto;
   max-width: 68rem;
-  margin: 0 auto 2.5rem 0;
+  margin: 0 auto 2.2rem 0;
   padding: 0 3rem;
   font-weight: 500;
   position: relative;
@@ -1042,6 +1069,7 @@ figcaption {
 
 .content-div-center {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   position: relative;
   flex-flow: column;
@@ -1052,12 +1080,8 @@ figcaption {
 
 
 .content-div-center.intro-summary{
-  margin: 1rem auto;
+  margin: 3rem auto;
   max-width: 74rem;
-}
-
-.wrap {
-  flex-flow:wrap;
 }
 
 .content-div-center.side-margin {
@@ -1069,9 +1093,24 @@ figcaption {
   align-items: flex-end;
 }
 
+._2-column-desc {
+  flex-flow: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2rem;
+  display: flex;
+  position: static;
+}
+
 .bar-section {
   font-style: normal;
 }
+
+
 
 ._6-wide-div {
   grid-area: span 1 / span 6 / span 1 / span 6;
@@ -1153,6 +1192,13 @@ figcaption {
   width: 100%;
 }
 
+.image-13 {
+  object-fit: cover;
+  flex: 1;
+  width: auto;
+  height: auto;
+}
+
 .assets-content {
   flex-flow: wrap;
   flex: 0 auto;
@@ -1165,6 +1211,23 @@ figcaption {
   position: relative;
 }
 
+.flex-wrap--content {
+  flex-flow: wrap;
+  width: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  gap: 1rem 2rem;
+  max-width: 76rem;
+}
+
+.flex-block-2 {
+  max-width: 100%;
+  width: 100%;
+}
 
 .common-desc {
   flex-flow: column;
@@ -1176,6 +1239,11 @@ figcaption {
   margin-right: auto;
   display: flex;
   position: static;
+}
+
+.common-desc.center {
+  margin-left: auto;
+
 }
 
 .welcome-1 {
@@ -1218,6 +1286,19 @@ figcaption {
   padding-bottom: 0;
 }
 
+.my-story {
+  grid-gap: .2rem;
+  flex-flow: column;
+  grid-template-rows: auto;
+  grid-template-columns: .25fr .75fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  padding-left: 1.1rem;
+  display: flex;
+}
+
 .highlight-text__large {
   z-index: auto;
   box-sizing: content-box;
@@ -1243,6 +1324,10 @@ figcaption {
   top: auto;
   bottom: 0;
   left: 0;
+}
+
+._100-wide {
+  width: 100%;
 }
 
 .text--wrapper__wide {
@@ -1470,6 +1555,19 @@ figcaption {
   min-width: auto;
   max-width: 47rem;
   position: relative;
+  /*! margin-bottom:2rem; */
+}
+
+.vertical-scroll{
+  flex-flow: column;
+  overflow: scroll;
+  max-height: 80vh;
+}
+
+.vertical-scroll.landing-pages-section{
+  flex-flow: row;
+  overflow: unset;
+  max-height: none;
 }
 
 .horizontal-scroll{
@@ -1484,8 +1582,9 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 31rem;
-  margin: 1.4rem 1rem;
+  max-width: 33rem;
+  margin: 1.4rem auto;
+  padding: 0 1rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1518,6 +1617,32 @@ figcaption {
 
 .video {
   min-width: 18.6rem;
+}
+
+.flex-right {
+  grid-gap: clamp(1rem,3%,2.5rem);
+  justify-content: flex-start;
+  align-items: flex-end;
+  display: flex;
+}
+
+.intro-block-small {
+  flex-flow: column;
+  justify-content: flex-start;
+  place-items: start stretch;
+  width: auto;
+  max-width: 45rem;
+  margin: 3rem auto 0 0;
+  row-gap: .5rem;
+  padding-left: 0;
+  padding-right: 2.5rem;
+  font-weight: 500;
+  display: flex;
+  position: relative;
+}
+
+.whiskr-container {
+  display: block;
 }
 
 .social-links {
@@ -1886,6 +2011,12 @@ figcaption {
     margin: 1.5rem 2rem;
   }
 
+  ._2-column-desc {
+    grid-gap: 0;
+    flex-flow: column;
+    padding-bottom: 2rem;
+  }
+
   .header-section div {
     justify-content: center;
     min-width: auto;
@@ -1918,6 +2049,8 @@ figcaption {
   .small-indent {
     margin: 0;
   }
+  
+
 
   .highlight-text__large {
     height: 100%;
@@ -1944,6 +2077,15 @@ figcaption {
   .text--wrapper__medium.content-desc {
   max-width: 100%;
   margin-left: 0.6rem;
+  }
+
+  .heading-medium {
+    color: #fff;
+    padding-left: .9rem;
+  }
+
+  .header-block-medium {
+    min-width: 15.5rem;
   }
 
   .demo-section {
@@ -2316,6 +2458,7 @@ figcaption {
 
   .text--wrapper__small {
     grid-gap:0.4rem .1rem;
+    /*! max-width: 27rem; */
   }
 
   .general-block {
