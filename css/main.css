@@ -8,6 +8,10 @@ html {
   --white: white;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body {
   color: #1a1b1f;
   font-size: 1rem;
@@ -711,7 +715,7 @@ figcaption {
 .dark-bar div {
   margin: auto;
   max-width: 71rem;
-  padding: 0 -2 0 2rem;
+  padding: 0 0 0 2rem;
   width: 100%;
 }
 
@@ -814,7 +818,7 @@ figcaption {
 }
 
 .project-content-bloc.screens {
-  max-width: 23rem;
+  max-width: 25rem;
 }
 
 .content-wrap {
@@ -994,7 +998,7 @@ figcaption {
   gap: 2rem 7rem;
   width: auto;
   max-width: 68rem;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 2.2rem 0;
   padding: 0 3rem;
   font-weight: 500;
   position: relative;
@@ -1059,12 +1063,13 @@ figcaption {
 }
 
 .content-desc {
-  margin: 0.4rem 1.5rem 0 1.2rem;
+  margin: 0.4rem 1.5rem 0 1.6rem;
 }
 
 
 .content-div-center {
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   position: relative;
   flex-flow: column;
@@ -1079,10 +1084,6 @@ figcaption {
   max-width: 74rem;
 }
 
-.wrap {
-  flex-flow:wrap;
-}
-
 .content-div-center.side-margin {
   margin: 0 auto;
 }
@@ -1090,6 +1091,8 @@ figcaption {
 .content-div-center.bottom-align {
   justify-content: center;
   align-items: flex-end;
+  display: flex;
+  flex-flow: wrap;
 }
 
 ._2-column-desc {
@@ -1481,7 +1484,7 @@ figcaption {
   flex: 0 auto;
   justify-content: flex-start;
   place-items: flex-start stretch;
-  max-width: 47rem;
+  max-width: 53rem;
   position: relative;
 }
 
@@ -1581,8 +1584,9 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 31rem;
-  margin: 1.4rem 1rem;
+  max-width: 30rem;
+  margin: 1.4rem auto;
+  padding: 0 1rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1640,7 +1644,6 @@ figcaption {
 }
 
 .whiskr-container {
-  /*! margin-left: 5rem; */
   display: block;
 }
 
@@ -1938,7 +1941,7 @@ figcaption {
   }
   
   .content-desc {
-    margin: .2rem 1rem;
+    margin: 0.4rem 1rem;
   }
 
   .poster-wrap {
@@ -2163,7 +2166,7 @@ figcaption {
   }
   
   #others{
-    margin: -3rem 2rem 1rem 2rem;
+    margin: -3rem 2rem 4rem 2rem;
   }
 
   
@@ -2463,6 +2466,7 @@ figcaption {
   .general-block {
     min-width: auto;
     max-width: 41.8rem;
+    margin: auto 1rem;
   }
   
   .name-block .text--wrapper__medium{
@@ -2474,9 +2478,9 @@ figcaption {
   }
 
   .div-name {
-    margin: 1rem auto 10rem;
+    margin: 1rem auto 11rem;
     flex-direction: column;
-    max-width: 35rem;
+    max-width: 30rem;
     padding: 1.5rem;
     align-items: start;
   }
@@ -2502,8 +2506,9 @@ figcaption {
     /*! max-width: 33rem; */
     left: 9%;
     max-width: 28rem;
-    bottom: -27%;
+    bottom: -31%;
     /*! padding-bottom: 0rem; */
+    row-gap: 0.6rem;
   }
 
   .medium-section {
@@ -2511,7 +2516,7 @@ figcaption {
     margin-right: auto;
     row-gap: 2rem;
     max-width: 100%;
-    padding: 0;
+    padding: 0 1rem;
   }
 
   .image-2 {
@@ -2519,7 +2524,7 @@ figcaption {
   }
 
   .project-summ {
-    grid-gap: .6rem;
+    grid-gap: 0.6rem;
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -2528,7 +2533,7 @@ figcaption {
   }
 
   .intro-block {
-    margin: 1rem;
+    margin: 0 1rem;
     padding: 0;
   }
 
@@ -2558,9 +2563,9 @@ figcaption {
   }
 
   .highlight-text__large, .highlight-text__small {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 130%;
-    /*! letter-spacing: -0.8px; */
+    letter-spacing: -3.9%;
   }
 
   .heading-medium {
@@ -2743,7 +2748,7 @@ figcaption {
 
   .set {
     max-width: 29rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0;
   }
@@ -2764,7 +2769,7 @@ figcaption {
   }
   
   .content-div-center {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     padding: 0;
   }
   
@@ -2799,7 +2804,7 @@ figcaption {
   }
 
   .content-bloc-narrow {
-    margin: 1rem 0;
+    margin: 1rem .5rem;
   }
 
   .dark-bar {
@@ -2844,7 +2849,7 @@ figcaption {
   }
     
   .poster-wrap {
-    /*! margin-top: 2rem; */
+    margin: 0 1rem;
   }
 
   .div-name {
@@ -2886,7 +2891,6 @@ figcaption {
 
   .medium-section {
     margin: auto;
-    padding: 0;
   }
 
   .div-name img {
@@ -2945,7 +2949,7 @@ figcaption {
     padding-bottom: 0;
     font-size: 0.9rem;
     position: static;
-    letter-spacing: -4.2%;
+    letter-spacing: -2.7%;
     width: auto;
   }
 
@@ -2978,7 +2982,7 @@ figcaption {
   
   
   .text--wrapper__tiny {
-    margin-top: 0.2rem;
+    margin-top: 0rem;
   }
 
   .demo-section {
@@ -2991,15 +2995,13 @@ figcaption {
 
   .project-challenge-bloc, .site-content-bloc, .site-content-bloc-wide {
     grid-gap: 0;
-    margin: 0;
+    margin: 0 .5rem;
   }
 
   .site-showcase {
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
+    margin: 2rem 0 auto;
+    padding: 0;
+    row-gap: 1rem;
   }
 
   .video {
