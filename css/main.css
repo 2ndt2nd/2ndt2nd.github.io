@@ -1091,6 +1091,8 @@ figcaption {
 .content-div-center.bottom-align {
   justify-content: center;
   align-items: flex-end;
+  display: flex;
+  flex-flow: wrap;
 }
 
 ._2-column-desc {
@@ -1582,7 +1584,7 @@ figcaption {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 33rem;
+  max-width: 30rem;
   margin: 1.4rem auto;
   padding: 0 1rem;
   font-weight: 500;
