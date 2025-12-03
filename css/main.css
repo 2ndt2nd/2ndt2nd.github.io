@@ -1572,14 +1572,15 @@ figcaption {
   max-height: none;
 }
 
-.horizontal-scroll{
+.horizontal-flex{
   flex-flow: row;
+  max-width: 100%;
 }
 
-.poster-wrap .horizontal-scroll{
+/* .poster-wrap .horizontal-flex{
   display: flex;
   flex-flow: row;
-}
+} */
 
 .content-bloc-narrow {
   flex-flow: wrap;
@@ -1949,7 +1950,7 @@ figcaption {
     max-width: 70rem;
   }
 
-  .poster-wrap .horizontal-scroll{
+  .poster-wrap .horizontal-flex{
     display: flex;
     /*! flex-flow: row; */
     /*! overflow-x: auto; */
@@ -1957,7 +1958,7 @@ figcaption {
   }
 
   
-  .horizontal-scroll div{
+  .horizontal-flex div{
     max-height: 30rem;
     margin-top: 0;
     width: 37rem;
@@ -2220,7 +2221,7 @@ figcaption {
     margin: 1rem 0;
   }
 
-  .poster-wrap .horizontal-scroll{
+  .poster-wrap .horizontal-flex{
     /*! max-height: 28rem; */
   }
 
