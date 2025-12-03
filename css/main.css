@@ -1575,6 +1575,7 @@ figcaption {
 .horizontal-flex{
   flex-flow: row;
   max-width: 100%;
+  display: flex;
 }
 
 /* .poster-wrap .horizontal-flex{
