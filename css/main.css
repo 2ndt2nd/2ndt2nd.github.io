@@ -1521,6 +1521,7 @@ figcaption {
   row-gap: 3rem;
   max-width: 99rem;
   margin: auto;
+  margin-top: 3rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
