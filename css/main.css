@@ -814,7 +814,7 @@ video {
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
-  max-width: 32rem;
+  max-width: 35rem;
   margin: 1.4rem 0 0;
   font-weight: 500;
   display: flex;
@@ -989,7 +989,7 @@ video {
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 72rem;
+  max-width: 76rem;
   margin: auto;
   position: relative;
   width: auto;
@@ -1089,7 +1089,7 @@ video {
 }
 
 .content-div-center.side-margin {
-  margin: 0 auto;
+  margin: .8rem auto;
 }
 
 .content-div-center.bottom-align {
@@ -1261,7 +1261,7 @@ video {
 }
 
 .visuals-section {
-  row-gap: 3rem;
+  row-gap: 2rem;
   flex-flow: column;
   justify-content: flex-start;
   max-width: 94rem;
@@ -1522,7 +1522,7 @@ video {
   flex-flow: column;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 3rem;
+  row-gap: 2rem;
   max-width: 99rem;
   margin: auto;
   margin-top: 3rem;
@@ -1591,8 +1591,8 @@ video {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 33rem;
-  margin: 1.4rem auto;
+  max-width: 35rem;
+  margin: 1rem auto;
   padding: 0 0.7rem;
   font-weight: 500;
   display: flex;
@@ -1602,7 +1602,7 @@ video {
 .developing-image {
   object-fit: cover;
   object-position: 50% 50%;
-  min-height: 22rem;
+  min-height: 24rem;
   width: auto;
   max-width: 100%;
 }
