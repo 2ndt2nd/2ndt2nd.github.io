@@ -2048,7 +2048,6 @@ video {
   .visuals-section, .landing-pages-section {
     max-width: none;
     padding: 0;
-    display: block;
   }
 
   .disc-desc {
