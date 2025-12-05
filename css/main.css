@@ -656,11 +656,11 @@ video {
 
 .set {
   color: var(--black);
-  letter-spacing: 5.05%;
+  letter-spacing: 7.15%;
   font-family: "Titillium Web", sans-serif;
   font-size: 1rem;
-  font-weight: 410;
-  line-height: 130%;
+  font-weight: 420;
+  line-height: 125%;
 }
 
 .body-3 {
@@ -710,7 +710,7 @@ video {
   grid-gap: .4rem 11rem;
   justify-content: flex-start;
   margin-top: 0;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem 0.8rem;
   position: relative;
   text-decoration: none;
   width: 100%;
@@ -965,7 +965,7 @@ video {
   min-width: 41.7rem;
   max-width: 57.5rem;
   display: flex;
-  margin: auto auto auto 4rem;
+  margin: auto;
   padding: 0.6rem 0 0.9rem;
 }
 
@@ -1044,7 +1044,7 @@ video {
 .text--wrapper__tiny {
   grid-gap: 0.4rem .1rem;
   flex-flow: column;
-  max-width: 34rem;
+  max-width: 36rem;
   margin-left: 0;
   display: flex;
 }
@@ -1067,7 +1067,7 @@ video {
 }
 
 .content-desc {
-  margin: 0.4rem 1.5rem 0 1.6rem;
+  margin: 0.4rem 0.7rem 0 0.7rem;
 }
 
 
@@ -1078,7 +1078,7 @@ video {
   position: relative;
   flex-flow: column;
   margin: 1.5rem auto 1rem;
-  max-width: 67rem;
+  max-width: 72rem;
   padding: 0 3rem;
 }
 
@@ -1360,7 +1360,7 @@ video {
 
 .text--wrapper__medium.content-desc {
   margin-top: 0.3rem;
-  margin-left: 1.5rem;
+  margin-left: 0.8rem;
 }
 
 .small-indent {
@@ -1591,9 +1591,9 @@ video {
 .content-bloc-narrow {
   flex-flow: wrap;
   width: auto;
-  max-width: 30rem;
+  max-width: 33rem;
   margin: 1.4rem auto;
-  padding: 0 1rem;
+  padding: 0 0.7rem;
   font-weight: 500;
   display: flex;
   position: relative;
@@ -1840,7 +1840,7 @@ video {
   }
 
   .set {
-    line-height: 140%;
+    line-height: 132%;
     font-size: 0.9rem;
   }
 
@@ -1948,7 +1948,8 @@ video {
   }
   
   .content-desc {
-    margin: 0.4rem 1rem;
+    margin: 0rem 1rem;
+    margin-top: 0.5rem;
   }
 
   .poster-wrap {
@@ -2070,7 +2071,7 @@ video {
 
   .highlight-text__small {
     padding-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .text--wrapper__medium {
@@ -2079,7 +2080,7 @@ video {
 
   .text--wrapper__tiny {
     max-width: 34rem;
-    margin-top: 0.4rem;
+    /*! margin-top: 0.4rem; */
   }
   
   .text--wrapper__medium.content-desc {
@@ -2472,11 +2473,12 @@ video {
   .general-block {
     min-width: auto;
     max-width: 41.8rem;
-    margin: auto 1rem;
+    margin: auto;
+    padding:1rem;
   }
   
-  .name-block .text--wrapper__medium{
-  margin: 0 .8rem;
+  .name-block .text--wrapper__medium {
+    margin: 0 .8rem;
   }
 
   .paragraph {
@@ -2570,8 +2572,8 @@ video {
 
   .highlight-text__large, .highlight-text__small {
     font-size: 1rem;
-    line-height: 130%;
-    letter-spacing: -3.9%;
+    line-height: 135%;
+    /*! letter-spacing: -3.9%; */
   }
 
   .heading-medium {
