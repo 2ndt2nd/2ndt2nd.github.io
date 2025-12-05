@@ -201,6 +201,10 @@ figcaption {
   line-height: 26px;
 }
 
+video {
+  max-width: 100%;
+}
+
 .styleguide-block {
   color: #fff;
   text-align: left;
