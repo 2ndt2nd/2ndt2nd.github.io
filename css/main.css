@@ -1160,10 +1160,10 @@ video {
   flex-flow: column;
   justify-content: flex-start;
   align-items: flex-end;
-  /*! min-width: 37rem; */
   height: auto;
   display: flex;
   position: static;
+  margin-top: -0.7rem;
 }
 
 .header-section .text--wrapper__tiny{
