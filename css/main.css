@@ -63,23 +63,21 @@ h1 {
 }
 
 h2 {
-  color: #1a1b1f;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 100%;
-  text-decoration: none;
-  display: block;
-  position: static;
 }
 
 h3 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
-  color: #333;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.1rem;
 }
 
 h4 {
@@ -171,7 +169,7 @@ label {
   margin-bottom: 0;
   font-size: 1rem;
   font-weight: 800;
-  line-height: 119%;
+  line-height: 100%;
   text-decoration: none;
 }
 
@@ -752,7 +750,7 @@ video {
   object-position: 50% 50%;
   background-clip: border-box;
   width: 100%;
-  max-height: 56vh;
+  max-height: 34rem;
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
@@ -1033,7 +1031,7 @@ video {
 }
 
 .text--wrapper__small {
-  grid-gap: 0.4rem .1rem;
+  grid-gap: 0.6rem .1rem;
   flex-flow: column;
   max-width: 49.9rem;
   margin-left: 0;
@@ -1159,11 +1157,11 @@ video {
   grid-gap: 0;
   flex-flow: column;
   justify-content: flex-start;
-  align-items: flex-end;
+  /*! align-items: flex-end; */
   height: auto;
   display: flex;
   position: static;
-  margin-top: -0.7rem;
+  margin-top: -0.3rem;
 }
 
 .header-section .text--wrapper__tiny{
@@ -1856,7 +1854,7 @@ video {
   }
 
   .dark-bar {
-    padding:.8rem 1rem;
+    padding:.8rem 1rem 0.8rem;
   }
   
   .dark-bar div {
@@ -1998,8 +1996,8 @@ video {
   }
 
   .project-summ {
-    grid-gap: 1.2rem;
-    flex-flow: column;
+    grid-gap: 2rem;
+/*     flex-flow: column; */
     justify-content: flex-start;
     align-items: flex-start;
     max-width: none;
@@ -2384,7 +2382,7 @@ video {
 
   .set {
     max-width: 100%;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
   }
 
@@ -2555,7 +2553,7 @@ video {
 
   .content-div-center {
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   .content-div-center.side-margin {
@@ -2583,11 +2581,8 @@ video {
   }
 
   .demo-section {
-    margin-bottom: 0;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding-left: 0;
-    padding-right: 0;
+    margin:  0 1rem;
+    padding: 0
   }
 
   .site-showcase {
@@ -2624,7 +2619,7 @@ video {
   }
   
   .visual-direction {
-    padding: 0 2rem;
+    padding: 0;
   }
 
 
