@@ -17,7 +17,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   line-height: 28px;
-  margin-left: 10rem;
+  /*! margin-left: 10rem; */
   background-color: #fff;
   background-image: url('../images/white-body-bg.png');
   background-repeat: repeat;
@@ -139,7 +139,7 @@ a {
 }
 
 a:hover, a:active{
-  color: #7b7b7b;
+  /*! color: #7b7b7b; */
   transition: color 0.3s ease;
 }
 
@@ -388,8 +388,8 @@ video {
   margin-left: 0;
   margin-right: auto;
   font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 800;
   letter-spacing: 0%;
 }
 
@@ -426,12 +426,33 @@ video {
   text-indent: 0;
   flex-flow: row;
   flex: 1;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 5.8rem;
   font-size: 18px;
   font-weight: 900;
   display: flex;
+  height: auto;
+  background-image: linear-gradient(to right, #000000bd, #0000);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+    transition:
+    min-width 0.4s ease,
+    height 0.4s ease,
+    background-size 0.4s ease,
+    transform 0.4s ease;
+}
+
+.navigation-items:hover {
+  min-width: 13rem;
+  height: 100vh;
+  background-image: linear-gradient(to right, #000000bd, #0000);
+  background-position: 0 0;
+  background-size: 100% 100%;
+    transition:
+    min-width 0.4s ease,
+    height 0.4s ease,
+    background-size 0.4s ease,
+    transform 0.4s ease;
 }
 
     
@@ -464,7 +485,7 @@ video {
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
-  margin: auto 3rem;
+  margin: auto;
   display: flex;
 }
 
@@ -760,26 +781,20 @@ video {
 .navigation-vertical {
   z-index: 50;
   text-transform: none;
-  background-color: #0f0f0f;
-  background-image: url('images/black-noise.png');
+  background-image: none;
   background-position: 0 0;
   background-size: auto;
-  justify-content: center;
   align-items: flex-start;
   width: auto;
-  min-width: 9rem;
-  height: 100vh;
-  margin-top: 0;
-  margin-left: 0;
-  padding: 0;
-  font-family: "Robotoflex Variablefont Grad Xopq Xtra Yopq Ytas Ytde Ytfi Ytlc Ytuc Opsz Slnt Wdth Wght", sans-serif;
-  font-weight: 600;
+  height: auto;
   display: flex;
   position: fixed;
   top: 0;
   left: 0;
   /*! bottom: 0; */
 }
+
+
 
 .navigation-items-vert {
   grid-gap: 0.6rem;
@@ -794,16 +809,25 @@ video {
 }
 
 .nav-wrap-vert {
-  width: 10rem;
+  /*! width: 12rem; */
   grid-gap: .9rem;
   flex-flow: column;
   flex: 0 auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  margin-left: 0;
-  padding: 0.9rem 3.7rem;
-  padding-left: 0;
-  padding-right: 0;
+  /*! margin-top: 1rem; */
+  /*! margin-bottom: 1rem; */
+  padding: 2rem;
+  /*! padding: 0.9rem 3.7rem; */
+  /*! padding-left: 0; */
+  /*! padding-right: 0; */
+}
+
+.nav-wrap-vert .navigation-wrapvert {
+  display: none
+}
+
+.nav-wrap-vert:hover .navigation-wrapvert {
+  display: block;
+  margin: 0;
 }
 
 .project-content-bloc {
@@ -1746,13 +1770,19 @@ video {
   }
 
   .navigation-items {
-    box-sizing: border-box;
     grid-gap: 0;
     background-color: #fff0;
     flex: 1;
     margin-left: 0;
     display: flex;
+    height: auto;
   }
+  
+  .navigation-items:hover {
+    grid-gap: 0;
+    height: auto;
+  }
+
 
   .navigation-items-vert div{
     display: flex;
@@ -1884,7 +1914,7 @@ video {
     margin-right: auto;
     padding-left: 2rem;
     padding-right: 2rem;
-    position: static;
+    position: sticky;
   }
 
   .navigation-items-vert {
@@ -3041,6 +3071,6 @@ video {
   font-display: auto;
 }
 
-/* *{
+*{
   border: red solid 1px
-} */
+}
