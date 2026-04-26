@@ -794,7 +794,7 @@ video {
   width: auto;
   height: auto;
   display: flex;
-  /*! position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   /*! bottom: 0; */
@@ -840,7 +840,7 @@ video {
   justify-content: flex-start;
   place-items: flex-start stretch;
   width: auto;
-  max-width: 35rem;
+  max-width: 22rem;
   margin: 1.4rem 0 0;
   font-weight: 500;
   display: flex;
@@ -924,7 +924,7 @@ video {
 
 .div-name {
   max-width: 51rem;
-  margin: 3.7rem auto 15rem;
+  margin: 3.7rem auto 10rem;
   position: relative;
   align-items: center;
   display: flex;
@@ -998,10 +998,10 @@ video {
 .name-block {
   grid-gap: .3rem;
   flex-flow: column;
-  max-width: 42.8rem;
+  max-width: 44.8rem;
   display: flex;
   position: absolute;
-  bottom: -60%;
+  bottom: -40%;
   left: 9%;
 }
 
@@ -1551,8 +1551,8 @@ video {
   align-items: center;
   row-gap: 2rem;
   max-width: 99rem;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
+  /*! margin-top: 3rem; */
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
