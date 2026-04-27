@@ -2998,6 +2998,7 @@ video {
   .visuals-section, .landing-pages-section {
     margin: 1rem 0 0;
     padding: 0;
+    gap: 1rem;
   }
   
   .visual-direction {
