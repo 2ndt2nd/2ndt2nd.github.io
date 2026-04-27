@@ -454,6 +454,11 @@ video {
     min-width 0.4s ease, height 0.4s ease, background-size 0.4s ease, transform 0.4s ease;
 }
 
+.navigation-items:hover .navigation-wrapvert {
+  visibility: invisible;
+  transition:min-width 0.4s ease, height 0.4s ease, background-size 0.4s ease, transform 0.4s ease;
+}
+
     
  .navigation-items-vert div{
     display: flex;
@@ -823,13 +828,15 @@ video {
 }
 
 .nav-wrap-vert .navigation-wrapvert {
-  visibility: none;
-  min-width\ 0\.4s\ ease\,\ height\ 0\.4s\ ease\,\ background-size\ 0\.4s\ ease\,\ transform\ 0\.4s\ ease: ;
+  /*! visibility: visible; */
+  transition: visibility 0.4s ease, opacity 0.4s ease; transform 0.4s ease;
+  opacity: 0%;
 }
 
 .nav-wrap-vert:hover .navigation-wrapvert {
   visibility: visible;
   margin: 0;
+  opacity: 100%;
 }
 
 .project-content-bloc {
