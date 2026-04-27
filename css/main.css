@@ -451,10 +451,7 @@ video {
   background-position: 0 0;
   background-size: 100% 100%;
     transition:
-    min-width 0.4s ease,
-    height 0.4s ease,
-    background-size 0.4s ease,
-    transform 0.4s ease;
+    min-width 0.4s ease, height 0.4s ease, background-size 0.4s ease, transform 0.4s ease;
 }
 
     
@@ -487,7 +484,7 @@ video {
   flex-flow: row;
   justify-content: flex-start;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
 }
 
@@ -826,11 +823,12 @@ video {
 }
 
 .nav-wrap-vert .navigation-wrapvert {
-  display: none
+  visibility: none;
+  min-width\ 0\.4s\ ease\,\ height\ 0\.4s\ ease\,\ background-size\ 0\.4s\ ease\,\ transform\ 0\.4s\ ease: ;
 }
 
 .nav-wrap-vert:hover .navigation-wrapvert {
-  display: block;
+  visibility: visible;
   margin: 0;
 }
 
@@ -944,7 +942,7 @@ video {
   justify-content: flex-start;
   align-items: center;
   font-family: "Titillium Web", sans-serif;
-  font-size: 4rem;
+  font-size: 3.8rem;
   font-weight: 700;
   line-height: 100%;
   display: flex;
