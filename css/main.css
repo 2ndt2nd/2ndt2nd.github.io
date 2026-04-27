@@ -455,7 +455,7 @@ video {
 }
 
 .navigation-items:hover .navigation-wrapvert {
-  visibility: invisible;
+  visibility: visible;
   transition:min-width 0.4s ease, height 0.4s ease, background-size 0.4s ease, transform 0.4s ease;
 }
 
@@ -828,7 +828,7 @@ video {
 }
 
 .nav-wrap-vert .navigation-wrapvert {
-  /*! visibility: visible; */
+  visibility: collapse;
   transition: visibility 0.4s ease, opacity 0.4s ease; transform 0.4s ease;
   opacity: 0%;
 }
