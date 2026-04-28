@@ -829,7 +829,7 @@ video {
 
 .nav-wrap-vert .navigation-wrapvert {
   visibility: collapse;
-  transition: visibility 0.4s ease, opacity 0.4s ease; transform 0.4s ease;
+  transition: visibility 0.4s ease, opacity 0.4s ease; transform: 0.4s ease;
   opacity: 0%;
 }
 
