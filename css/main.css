@@ -1176,7 +1176,7 @@ video {
   max-width: 47rem;
   display: flex;
   padding: 0 3rem;
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .header-section div{
@@ -2286,10 +2286,6 @@ video {
     margin: 1rem 0;
   }
 
-  .poster-wrap .horizontal-flex{
-    /*! max-height: 28rem; */
-  }
-
   .cat-poster-wrap {
     margin-bottom: 4.7rem;
     flex-flow: row;
@@ -2782,10 +2778,6 @@ video {
     padding-right: 20px;
   }
 
-  .navigation-items {
-    /*! margin-bottom: 0; */
-  }
-
   .content-section.slide-in {
     margin-left: 0;
     margin-right: 0;
@@ -3080,7 +3072,7 @@ video {
   
   .visual-direction {
     padding: 0 1rem;
-    margin-top: ;
+    /* margin-top: ; */
   }
   
   .vectors-wrappervert {
