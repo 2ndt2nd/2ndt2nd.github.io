@@ -1104,7 +1104,7 @@ video {
   justify-content: center;
   position: relative;
   flex-flow: column;
-  margin: 1.5rem auto 1rem;
+  margin: 6.5rem auto 4rem;
   max-width: 72rem;
   padding: 0 3rem;
 }
@@ -2149,7 +2149,7 @@ video {
   .demo-section {
     max-width: none;
     margin: 2rem auto;
-    padding: 0 3rem;
+    /*! padding: 0 3rem; */
     display: block;
   }
 
@@ -2505,7 +2505,7 @@ video {
   }
 
   .text--wrapper__small {
-    grid-gap:0.4rem .1rem;
+    grid-gap:0.8rem 0.1rem;
     /*! max-width: 27rem; */
   }
 
@@ -2563,7 +2563,7 @@ video {
     margin-right: auto;
     row-gap: 2rem;
     max-width: 100%;
-    padding: 0 1rem;
+    padding: 0;
   }
 
   .image-2 {
@@ -2678,9 +2678,10 @@ video {
 @media screen and (width <= 479px) {
   p, p.large {
     max-width: 29rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0;
+    line-height: 125%;
   }
   
   p.condensed {
@@ -2693,7 +2694,7 @@ video {
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   
   label {
@@ -2796,7 +2797,7 @@ video {
 
   .set {
     max-width: 29rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0;
   }
@@ -2852,7 +2853,8 @@ video {
   }
 
   .content-bloc-narrow {
-    margin: 1rem .5rem;
+    margin: 0;
+    padding: 0;
   }
 
   .dark-bar {
@@ -2948,13 +2950,13 @@ video {
     grid-gap: 0.7rem;
     flex-flow: column;
     margin-bottom: 1rem;
-    margin: 1rem 1rem 1.5rem;
+    margin: 1rem 1rem 0;
     padding: 0;
   }
 
   .intro-block {
     grid-gap: 0;
-    margin: auto 1rem 0;
+    margin: 2rem 1rem;
     padding: 0;
   }
 
@@ -2981,10 +2983,6 @@ video {
     margin: 0;
   }
   
-  .video-container{
-    margin-top: 1.5rem
-  }
-
   .disc-desc {
     font-size: .8rem;
   }
@@ -2994,9 +2992,9 @@ video {
     box-sizing: border-box;
     margin-bottom: 0;
     padding-bottom: 0;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     position: static;
-    letter-spacing: -2.7%;
+    letter-spacing: -1.7%;
     width: auto;
   }
 
@@ -3005,7 +3003,7 @@ video {
   }
 
   .text--wrapper__medium.content-desc {
-    margin: .5rem 0.7rem;
+    margin: 0.5rem 1rem;
     }
   
   .name-block .text--wrapper__medium {
@@ -3042,11 +3040,11 @@ video {
 
   .project-challenge-bloc, .site-content-bloc, .site-content-bloc-wide {
     grid-gap: 0;
-    margin: 0 .5rem;
+    /*! margin: 0 .5rem; */
   }
 
   .site-showcase {
-    margin: 2rem 0 auto;
+    margin: 2rem 0 1rem;
     padding: 0;
     row-gap: 1rem;
   }
@@ -3057,7 +3055,7 @@ video {
   }
   
   .visual-direction {
-    padding: 0 1rem;
+    /*! padding: 0 1rem; */
     /* margin-top: ; */
   }
   
